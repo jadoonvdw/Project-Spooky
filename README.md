@@ -1,2 +1,3 @@
 # Horror-Game
  
+SCARY
