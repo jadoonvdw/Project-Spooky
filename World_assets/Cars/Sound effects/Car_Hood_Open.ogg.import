@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://s3yt5ba8g1oy"
+path="res://.godot/imported/Car_Hood_Open.ogg-3cd34f129ae6b6e0e40ae21069ca5449.oggvorbisstr"
+
+[deps]
+
+source_file="res://World_assets/Cars/Sound effects/Car_Hood_Open.ogg"
+dest_files=["res://.godot/imported/Car_Hood_Open.ogg-3cd34f129ae6b6e0e40ae21069ca5449.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
