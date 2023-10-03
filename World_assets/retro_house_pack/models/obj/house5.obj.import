@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3h8guqvudmpy"
+path="res://.godot/imported/house5.obj-7187716f193496e7789cdd9608cce82b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/house5.obj-7187716f193496e7789cdd9608cce82b.mesh"]
+
+source_file="res://World_assets/retro_house_pack/models/obj/house5.obj"
+dest_files=["res://.godot/imported/house5.obj-7187716f193496e7789cdd9608cce82b.mesh", "res://.godot/imported/house5.obj-7187716f193496e7789cdd9608cce82b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

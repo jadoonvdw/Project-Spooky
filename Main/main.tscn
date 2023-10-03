@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://cp1oj3mvkqe3"]
+
+[ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
+[ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/World.tscn" id="1_gbygh"]
+[ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_om6f5"]
+[ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_13b6p"]
+panorama = ExtResource("1_5e3dg")
+
+[sub_resource type="Sky" id="Sky_no8pv"]
+sky_material = SubResource("PanoramaSkyMaterial_13b6p")
+
+[sub_resource type="Environment" id="Environment_ejpf4"]
+background_mode = 2
+sky = SubResource("Sky_no8pv")
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 2
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+fog_light_color = Color(0.380392, 0.411765, 0.462745, 1)
+fog_light_energy = 0.25
+fog_sun_scatter = 1.0
+fog_density = 0.5342
+fog_sky_affect = 0.75
+fog_height = 1.0
+fog_height_density = -5.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.12
+volumetric_fog_albedo = Color(0.992157, 0.992157, 0.992157, 1)
+volumetric_fog_sky_affect = 0.95
+adjustment_brightness = 1.5
+adjustment_contrast = 0.8
+adjustment_saturation = 0.6
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_sfylq"]
+dof_blur_far_distance = 30.0
+
+[node name="main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.528264, 0.735326, -0.424539, -1.41025e-08, 0.499998, 0.866026, 0.84908, 0.45749, -0.264131, 242, 0, 173)
+light_color = Color(0.447059, 0.545098, 0.713726, 1)
+light_energy = 0.09
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ejpf4")
+camera_attributes = SubResource("CameraAttributesPractical_sfylq")
+
+[node name="World" parent="." instance=ExtResource("1_gbygh")]
+transform = Transform3D(0.991014, 0, -0.133761, 0, 1, 0, 0.133761, 0, 0.991014, 284.474, -1.24483, 275.75)
+
+[node name="player" parent="." instance=ExtResource("2_om6f5")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 331.869, 1.81413, 350.293)
+
+[node name="Node3D" parent="." instance=ExtResource("3_hx25i")]

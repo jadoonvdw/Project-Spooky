@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vipjh27rke0r"
+path="res://.godot/imported/tree03.obj-0cb19cddd16883e5c8355e210df90311.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree03.obj-0cb19cddd16883e5c8355e210df90311.mesh"]
+
+source_file="res://World_assets/retro_nature_pack/models/OBJ/trees/tree03.obj"
+dest_files=["res://.godot/imported/tree03.obj-0cb19cddd16883e5c8355e210df90311.mesh", "res://.godot/imported/tree03.obj-0cb19cddd16883e5c8355e210df90311.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

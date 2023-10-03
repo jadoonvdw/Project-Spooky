@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkqc3b6gkgaow"
+path="res://.godot/imported/grass02.obj-424ed68736136bf9bfd45337a0065fca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/grass02.obj-424ed68736136bf9bfd45337a0065fca.mesh"]
+
+source_file="res://World_assets/retro_nature_pack/models/OBJ/grass/grass02.obj"
+dest_files=["res://.godot/imported/grass02.obj-424ed68736136bf9bfd45337a0065fca.mesh", "res://.godot/imported/grass02.obj-424ed68736136bf9bfd45337a0065fca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

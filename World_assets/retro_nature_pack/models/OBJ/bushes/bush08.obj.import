@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cc7b4sknsk7k7"
+path="res://.godot/imported/bush08.obj-2c3ddbd2ee5479dcdb0406c3edc556f4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bush08.obj-2c3ddbd2ee5479dcdb0406c3edc556f4.mesh"]
+
+source_file="res://World_assets/retro_nature_pack/models/OBJ/bushes/bush08.obj"
+dest_files=["res://.godot/imported/bush08.obj-2c3ddbd2ee5479dcdb0406c3edc556f4.mesh", "res://.godot/imported/bush08.obj-2c3ddbd2ee5479dcdb0406c3edc556f4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

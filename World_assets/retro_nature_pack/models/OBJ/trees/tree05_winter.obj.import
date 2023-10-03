@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvnd0nyyemrgx"
+path="res://.godot/imported/tree05_winter.obj-a31cef27b13501404b417f47381e499b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree05_winter.obj-a31cef27b13501404b417f47381e499b.mesh"]
+
+source_file="res://World_assets/retro_nature_pack/models/OBJ/trees/tree05_winter.obj"
+dest_files=["res://.godot/imported/tree05_winter.obj-a31cef27b13501404b417f47381e499b.mesh", "res://.godot/imported/tree05_winter.obj-a31cef27b13501404b417f47381e499b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
