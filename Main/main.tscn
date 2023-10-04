@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cp1oj3mvkqe3"]
+[gd_scene load_steps=10 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
 [ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/World.tscn" id="1_gbygh"]
 [ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_om6f5"]
 [ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
+[ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/car_tent.tscn" id="5_sf63b"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_13b6p"]
 panorama = ExtResource("1_5e3dg")
@@ -56,4 +57,7 @@ transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 331.869, 1.81413, 350.293)
 
-[node name="Node3D" parent="." instance=ExtResource("3_hx25i")]
+[node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
+
+[node name="Tent Scene" parent="." instance=ExtResource("5_sf63b")]
+transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)

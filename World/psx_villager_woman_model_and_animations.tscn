@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnvr311sfn4dr"]
+
+[ext_resource type="PackedScene" uid="uid://dtepsuyrp0elc" path="res://World_assets/PSX Villager Woman/PSX_Villager_Woman_Model_And_Animations.fbx" id="1_cgj6t"]
+
+[node name="PSX_Villager_Woman_Model_And_Animations" instance=ExtResource("1_cgj6t")]

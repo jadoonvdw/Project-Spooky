@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://sdrydvd3xad6"]
+
+[sub_resource type="Gradient" id="Gradient_5u3s5"]
+offsets = PackedFloat32Array(0, 0.97561)
+colors = PackedColorArray(1, 0, 0, 1, 0.653311, 0.665084, 0.0779279, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_58fml"]
+gradient = SubResource("Gradient_5u3s5")
+
+[sub_resource type="Curve" id="Curve_r0auy"]
+_data = [Vector2(0.0194805, 0.0315789), 0.0, 0.0, 0, 0, Vector2(0.266234, 1), 0.0, 0.0, 0, 0, Vector2(0.668831, 0.242105), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_10e1r"]
+curve = SubResource("Curve_r0auy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_obnds"]
+emission_shape = 1
+emission_sphere_radius = 0.2
+direction = Vector3(0, 0, 0)
+spread = 0.0
+gravity = Vector3(0, 4, 0)
+angular_velocity_max = 90.0
+scale_min = 0.0
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_10e1r")
+color_ramp = SubResource("GradientTexture1D_58fml")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_raw73"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_2ootj"]
+material = SubResource("StandardMaterial3D_raw73")
+
+[sub_resource type="Curve" id="Curve_ydvg1"]
+_data = [Vector2(0.025974, 0.0210526), 0.0, 0.0, 0, 0, Vector2(0.305195, 0.968421), 0.0, 0.0, 0, 0, Vector2(0.785714, 0.968421), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_my62y"]
+curve = SubResource("Curve_ydvg1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nrcrr"]
+emission_shape = 1
+emission_sphere_radius = 0.2
+direction = Vector3(0, 0, 0)
+spread = 0.0
+gravity = Vector3(0, 4, 0)
+angular_velocity_min = 1.0
+angular_velocity_max = 90.0
+scale_min = 0.7
+scale_max = 0.7
+scale_curve = SubResource("CurveTexture_my62y")
+color = Color(0.466667, 0.466667, 0.466667, 0.0862745)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_moga6"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_o35j3"]
+material = SubResource("StandardMaterial3D_moga6")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="fire" type="GPUParticles3D" parent="."]
+amount = 40
+process_material = SubResource("ParticleProcessMaterial_obnds")
+draw_pass_1 = SubResource("QuadMesh_2ootj")
+
+[node name="Smoke" type="GPUParticles3D" parent="."]
+amount = 16
+lifetime = 2.0
+process_material = SubResource("ParticleProcessMaterial_nrcrr")
+draw_pass_1 = SubResource("QuadMesh_o35j3")

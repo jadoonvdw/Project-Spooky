@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bx5t3d5syisxd"]
+
+[ext_resource type="PackedScene" uid="uid://di8mibisyyxo2" path="res://World_assets/PSX Villager Woman/dead_lady.glb" id="1_8yy73"]
+[ext_resource type="Shader" path="res://Shadrs/psx.gdshader" id="2_nmp56"]
+[ext_resource type="Texture2D" uid="uid://dmwvkbq7oy7co" path="res://World_assets/PSX Villager Woman/VillageWomanTexture.png" id="3_wfpxy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vt7uk"]
+render_priority = 0
+shader = ExtResource("2_nmp56")
+shader_parameter/affine_mapping = false
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(320, 240)
+shader_parameter/albedo = ExtResource("3_wfpxy")
+
+[node name="dead_lady" instance=ExtResource("1_8yy73")]
+
+[node name="Body" parent="Armature/Skeleton3D" index="0"]
+material_override = SubResource("ShaderMaterial_vt7uk")
