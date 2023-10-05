@@ -16,7 +16,6 @@ textures = [[ExtResource("4_f76qx")], [ExtResource("5_0y1ct")]]
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hs23g"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("6_w4lv5")
 metallic = 0.35
 roughness = 0.5
@@ -27,7 +26,6 @@ texture_filter = 1
 resource_name = "signs"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("7_8r7xn")
 metallic = 0.35
 roughness = 0.5
@@ -110,7 +108,7 @@ shader_params/u_triplanar = null
 shader_params/u_tile_reduction = null
 
 [node name="detailBarrier_typeA" type="Node3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 288.94, 9.39137, 387.368)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 288.94, 8.61419, 387.368)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="detailBarrier_typeA"]
 transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, -96.3133, -3.13046, -129.123)
@@ -125,7 +123,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
 
 [node name="detailBarrier_typeA2" type="Node3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 286.819, 9.39137, 387.368)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 286.819, 8.48128, 387.368)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="detailBarrier_typeA2"]
 transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, -96.3133, -3.13046, -129.123)
@@ -155,7 +153,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
 
 [node name="detailBarrier_typeA4" type="Node3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, -0.903566, 2.86069, 0, -2.86069, -0.903566, 284.909, 16.8495, 376.562)
+transform = Transform3D(3, 0, 0, 0, -0.903566, 2.86069, 0, -2.86069, -0.903566, 284.909, 16.1224, 376.562)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="detailBarrier_typeA4"]
 transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, -96.3133, -3.13046, -129.123)
@@ -170,7 +168,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
 
 [node name="detailBarrier_typeA5" type="Node3D" parent="."]
-transform = Transform3D(0.967916, -2.6067, -1.12617, -0.421404, -1.30849, 2.66651, -2.80812, -0.702127, -0.788328, 290.574, 19.5446, 397.499)
+transform = Transform3D(0.967916, -2.6067, -1.12617, -0.421404, -1.30849, 2.66651, -2.80812, -0.702127, -0.788328, 290.574, 19.1454, 397.499)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="detailBarrier_typeA5"]
 transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, -96.3133, -3.13046, -129.123)
@@ -185,7 +183,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
 
 [node name="detailBarrier_typeA6" type="Node3D" parent="."]
-transform = Transform3D(2.7969, -1.08142, -0.088658, -0.421404, -1.30849, 2.66651, -0.999879, -2.47353, -1.37181, 284.344, 19.2151, 381.295)
+transform = Transform3D(2.7969, -1.08142, -0.088658, -0.421404, -1.30849, 2.66651, -0.999879, -2.47353, -1.37181, 284.344, 18.7491, 381.295)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="detailBarrier_typeA6"]
 transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, -96.3133, -3.13046, -129.123)
