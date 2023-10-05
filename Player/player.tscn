@@ -48,5 +48,6 @@ far = 1000.0
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CharacterBody3D/Head/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210032, -0.515584, 0.210367)
+visible = false
 spot_range = 264.107
 spot_angle = 12.1381

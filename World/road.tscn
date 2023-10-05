@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://yi171ekoffeu"]
+
+[ext_resource type="MeshLibrary" uid="uid://b7jh7j24eo4k7" path="res://World/kenny_mesh_lib.meshlib" id="1_4l1yw"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("1_4l1yw")

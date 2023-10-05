@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://b77p78x251kad"]
+
+[ext_resource type="Texture2D" uid="uid://8lfu3h7kuxcn" path="res://World_assets/Cars/Car 03/car3.png" id="1_rfofi"]
+[ext_resource type="Texture2D" uid="uid://bameasptmnm3i" path="res://World_assets/Cars/Car 03/car3emission.png" id="2_ec0un"]
+[ext_resource type="ArrayMesh" uid="uid://fithej7ak2wi" path="res://World_assets/Cars/Car 03/Car3.obj" id="3_bgbnn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0kjn8"]
+albedo_texture = ExtResource("1_rfofi")
+emission_enabled = true
+emission_energy_multiplier = 16.0
+emission_texture = ExtResource("2_ec0un")
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(-0.937549, -0.347852, 0, 0.347852, -0.937549, 0, 0, 0, 1, 0, 1.338, 0)
+
+[node name="Car3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 0, 0.400767)
+material_overlay = SubResource("StandardMaterial3D_0kjn8")
+mesh = ExtResource("3_bgbnn")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.751588, -0.659623, -0.00364185, -0.658507, 0.749971, 0.0625509, -0.0385287, 0.0494107, -0.998035, 0.35197, 0.796077, 3.41339)
+light_color = Color(0.984314, 0.921569, 0.443137, 1)
+light_energy = 16.0
+spot_range = 35.7089
+spot_angle = 15.8759
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.750418, -0.660672, 0.0196387, -0.658072, 0.749582, 0.0711885, -0.061753, 0.0404975, -0.99727, -1.10168, 0.817063, 3.40665)
+light_energy = 16.0
+spot_range = 35.5392
+spot_angle = 16.2005

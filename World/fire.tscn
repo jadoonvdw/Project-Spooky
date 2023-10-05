@@ -55,6 +55,7 @@ spread = 0.0
 gravity = Vector3(0, 4, 0)
 angular_velocity_min = 1.0
 angular_velocity_max = 90.0
+linear_accel_min = -5.0
 scale_min = 0.7
 scale_max = 0.7
 scale_curve = SubResource("CurveTexture_my62y")
