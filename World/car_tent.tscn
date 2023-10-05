@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://x43q4ul6quh0" path="res://World/Tent_scene.tscn" id="4_j6tb2"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D2" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0560446, 0)
 
 [node name="Survival" parent="." instance=ExtResource("4_j6tb2")]

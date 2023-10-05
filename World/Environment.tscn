@@ -89,7 +89,7 @@ shadow_mesh = SubResource("ArrayMesh_4h3vs")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ovajb"]
 points = PackedVector3Array(-0.219937, -0.00343651, -0.0704365, 0.219937, 0.402071, 0.00514245, 0.219937, 0.402071, -0.00170635, -0.219937, 0.402071, 0.00514245, 0.219937, -0.00343651, 0.0670238, 0.219937, -0.00343651, -0.0704365, -0.219937, -0.00343651, 0.0670238, 0.219937, 0.030938, 0.0670238, -0.219937, 0.0172041, -0.0704365, -0.219937, 0.402071, -0.00170635, -0.219937, 0.030938, 0.0670238, 0.219937, 0.0172041, -0.0704365)
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D2" type="Node3D"]
 
 [node name="HTerrain" type="Node3D" parent="."]
 script = ExtResource("1_c1eo4")

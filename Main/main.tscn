@@ -30,7 +30,8 @@ fog_density = 0.5342
 fog_sky_affect = 0.75
 fog_height = 1.0
 fog_height_density = -5.0
-volumetric_fog_density = 0.11
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.06
 volumetric_fog_albedo = Color(0.992157, 0.992157, 0.992157, 1)
 volumetric_fog_sky_affect = 0.95
 adjustment_brightness = 1.5
@@ -70,7 +71,8 @@ camera_attributes = SubResource("CameraAttributesPractical_sfylq")
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.13835, 213.856)
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.236, 13.3404, 384.738)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.236, 11.945, 384.738)
+visible = false
 
 [node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
 
@@ -78,7 +80,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.236, 13.3404, 384.738)
 transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)
 
 [node name="Car" parent="." instance=ExtResource("6_nluqf")]
-transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.138959, -1.47584, 0.229329, -0.65378, -0.267187, -1.32333, 318.194, 14.8804, 395.251)
+transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.0341706, -1.49951, 0.0178739, -0.66751, -0.0312195, -1.34294, 321.049, 14.8804, 401.757)
 
 [node name="ambientForestSounds" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_62he0")
