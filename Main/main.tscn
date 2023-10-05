@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
-[ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/World.tscn" id="1_gbygh"]
+[ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/Forest.tscn" id="1_gbygh"]
 [ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_om6f5"]
 [ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
 [ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/car_tent.tscn" id="5_sf63b"]
@@ -66,7 +66,7 @@ shadow_enabled = true
 environment = SubResource("Environment_ejpf4")
 camera_attributes = SubResource("CameraAttributesPractical_sfylq")
 
-[node name="World" parent="." instance=ExtResource("1_gbygh")]
+[node name="Forest" parent="." instance=ExtResource("1_gbygh")]
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.13835, 213.856)
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
