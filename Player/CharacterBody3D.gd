@@ -18,52 +18,36 @@ const FOV_CHANGE = 1.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = 9.8
 
-@onready var head = $Head
-@onready var camera = $Head/Camera3D
-@onready var flashlight = $Head/Camera3D/SpotLight3D
+@onready var head := $Head
+@onready var camera := $Head/Camera3D
+@onready var flashlight := $Head/Camera3D/SpotLight3D
+@onready var ditherCam := $Head/Camera3D/SubViewportContainer/SubViewport/Camera3D
+@onready var ditherViewport := $Head/Camera3D/SubViewportContainer/SubViewport	
 
-
-
-
-
-func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
-
-	#move camera
+#Mouse capture and camera control
 func _unhandled_input(event):
-	if event.is_action_pressed("fire"):
+	if event.is_action_pressed("fire"): #capture mouse on fire
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event.is_action_pressed("ui_cancel"):
+	elif event.is_action_pressed("ui_cancel"): #free mouse on pause
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	
-	
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED: #Update camera pos on mouse move
 		if event is InputEventMouseMotion:
 			head.rotate_y(-event.relative.x * SENSITIVITY)
 			camera.rotate_x(-event.relative.y * SENSITIVITY)
-			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(75)) #Clamping camera
 			
-
-	
-
+#Character movement code
 func _physics_process(delta):
 	#synch cam with viewport
-	$Head/Camera3D/SubViewportContainer/SubViewport/Camera3D.global_transform = camera.global_transform
-	$Head/Camera3D/SubViewportContainer/SubViewport.size = DisplayServer.window_get_size()
-	
+	ditherCam.global_transform = camera.global_transform
+	ditherViewport.size = DisplayServer.window_get_size()
 	#toggle flashlight
 	if Input.is_action_just_pressed("flashlight"):
 		flashlight.visible = not flashlight.visible
-	
 		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-
-	
-		
-	
 
 	# Handle Sprint.
 	if Input.is_action_pressed("sprint"):
@@ -92,11 +76,11 @@ func _physics_process(delta):
 	# FOV
 	var velocity_clamped = clamp(velocity.length(), 0.5, SPRINT_SPEED * 2)
 	var target_fov = BASE_FOV + FOV_CHANGE * velocity_clamped
-	camera.fov = lerp(camera.fov, target_fov, delta * 8.0)
+	camera.fov = lerp(camera.fov, target_fov, delta * 4.0)
 
 	move_and_slide()
 
-
+#Headbob Function
 func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
