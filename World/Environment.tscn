@@ -1,17 +1,19 @@
-[gd_scene load_steps=14 format=3 uid="uid://bvud0gceipuii"]
+[gd_scene load_steps=16 format=3 uid="uid://bvud0gceipuii"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_c1eo4"]
 [ext_resource type="Resource" path="res://World/data.hterrain" id="2_a01pd"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_lhwfx"]
-[ext_resource type="Texture2D" uid="uid://be8bx4g72mmxp" path="res://Ground _textures/textures/slot0_albedo_bump.png" id="4_f76qx"]
-[ext_resource type="Texture2D" uid="uid://b22lv8v7mr34n" path="res://Ground _textures/textures/slot0_normal_roughness.png" id="5_0y1ct"]
+[ext_resource type="Texture2D" uid="uid://c3ggymkfigpk1" path="res://World/Environment_slot0_albedo_bump.png" id="4_k8w5s"]
+[ext_resource type="Texture2D" uid="uid://bg7cqjfscbbxb" path="res://World/Environment_slot1_albedo_bump.png" id="5_birac"]
+[ext_resource type="Texture2D" uid="uid://5ciyqkly7ovv" path="res://World/Environment_slot0_normal_roughness.png" id="6_hq13p"]
 [ext_resource type="Texture2D" uid="uid://uggct4x6qb02" path="res://World_assets/kenny_retro_GLBS/detailBarrier_typeA_metal.png" id="6_w4lv5"]
 [ext_resource type="Texture2D" uid="uid://dtr1lsnvpam2h" path="res://World_assets/kenny_retro_GLBS/detailBarrier_typeA_signs.png" id="7_8r7xn"]
+[ext_resource type="Texture2D" uid="uid://8b1oxjcdtg44" path="res://World/Environment_slot1_normal_roughness.png" id="7_g1j2d"]
 
 [sub_resource type="Resource" id="Resource_6drvs"]
 script = ExtResource("3_lhwfx")
 mode = 0
-textures = [[ExtResource("4_f76qx")], [ExtResource("5_0y1ct")]]
+textures = [[ExtResource("4_k8w5s"), ExtResource("5_birac")], [ExtResource("6_hq13p"), ExtResource("7_g1j2d")]]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hs23g"]
 resource_name = "metal"

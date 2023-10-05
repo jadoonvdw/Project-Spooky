@@ -1,8 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b77p78x251kad"]
+[gd_scene load_steps=10 format=3 uid="uid://b77p78x251kad"]
 
 [ext_resource type="Texture2D" uid="uid://8lfu3h7kuxcn" path="res://World_assets/Cars/Car 03/car3.png" id="1_rfofi"]
+[ext_resource type="Script" path="res://World/car.gd" id="1_xu5ix"]
 [ext_resource type="Texture2D" uid="uid://bameasptmnm3i" path="res://World_assets/Cars/Car 03/car3emission.png" id="2_ec0un"]
 [ext_resource type="ArrayMesh" uid="uid://fithej7ak2wi" path="res://World_assets/Cars/Car 03/Car3.obj" id="3_bgbnn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xxr2h"]
+size = Vector3(4.066, 2.17268, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0kjn8"]
 albedo_texture = ExtResource("1_rfofi")
@@ -10,23 +14,123 @@ emission_enabled = true
 emission_energy_multiplier = 16.0
 emission_texture = ExtResource("2_ec0un")
 
+[sub_resource type="Animation" id="Animation_4dx3y"]
+resource_name = "flicker"
+loop_mode = 1
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticBody3D/Car3/SpotLight3D2:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.766667, 0.866667, 0.966667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [8.0, 0.0, 8.0, 8.0, 0.0, 8.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticBody3D/Car3/SpotLight3D:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.766667, 0.866667, 0.966667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [8.0, 0.0, 8.0, 8.0, 0.0, 8.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticBody3D/Car3:material_overlay:emission_enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.766667, 0.866667, 0.966667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, true, false, true]
+}
+
+[sub_resource type="Animation" id="Animation_a5jju"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StaticBody3D/Car3/SpotLight3D2:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [8.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StaticBody3D/Car3/SpotLight3D:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [8.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("StaticBody3D/Car3:material_overlay:emission_enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ffymn"]
+_data = {
+"RESET": SubResource("Animation_a5jju"),
+"flicker": SubResource("Animation_4dx3y")
+}
+
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(-0.937549, -0.347852, 0, 0.347852, -0.937549, 0, 0, 0, 1, 0, 1.338, 0)
+script = ExtResource("1_xu5ix")
 
-[node name="Car3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 0, 0.400767)
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 5.96046e-07, 2.5654)
+shape = SubResource("BoxShape3D_xxr2h")
+
+[node name="Car3" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 1.19209e-07, 0.400767)
 material_overlay = SubResource("StandardMaterial3D_0kjn8")
 mesh = ExtResource("3_bgbnn")
+skeleton = NodePath("../..")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.751588, -0.659623, -0.00364185, -0.658507, 0.749971, 0.0625509, -0.0385287, 0.0494107, -0.998035, 0.35197, 0.796077, 3.41339)
-light_color = Color(0.984314, 0.921569, 0.443137, 1)
-light_energy = 16.0
+[node name="SpotLight3D2" type="SpotLight3D" parent="StaticBody3D/Car3"]
+transform = Transform3D(-0.750419, -0.660672, 0.0196387, -0.658072, 0.749582, 0.0711886, -0.061753, 0.0404975, -0.99727, -0.73206, 0.817063, 3.00588)
+light_color = Color(0.760784, 0.737255, 0.47451, 1)
+light_energy = 8.0
+spot_range = 35.5392
+spot_angle = 16.2005
+
+[node name="SpotLight3D" type="SpotLight3D" parent="StaticBody3D/Car3"]
+transform = Transform3D(-0.751588, -0.659623, -0.00364189, -0.658507, 0.749971, 0.0625509, -0.0385287, 0.0494107, -0.998035, 0.72159, 0.796077, 3.01262)
+light_color = Color(0.760784, 0.737255, 0.47451, 1)
+light_energy = 8.0
 spot_range = 35.7089
 spot_angle = 15.8759
 
-[node name="SpotLight3D2" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.750418, -0.660672, 0.0196387, -0.658072, 0.749582, 0.0711885, -0.061753, 0.0404975, -0.99727, -1.10168, 0.817063, 3.40665)
-light_energy = 16.0
-spot_range = 35.5392
-spot_angle = 16.2005
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ffymn")
+}

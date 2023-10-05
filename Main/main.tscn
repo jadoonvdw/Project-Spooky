@@ -29,7 +29,7 @@ fog_density = 0.5342
 fog_sky_affect = 0.75
 fog_height = 1.0
 fog_height_density = -5.0
-volumetric_fog_density = 0.11
+volumetric_fog_enabled = true
 volumetric_fog_albedo = Color(0.992157, 0.992157, 0.992157, 1)
 volumetric_fog_sky_affect = 0.95
 adjustment_brightness = 1.5
@@ -63,4 +63,4 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.179, 11.9547, 385.308)
 transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)
 
 [node name="Car" parent="." instance=ExtResource("6_nluqf")]
-transform = Transform3D(0.492077, 0.262699, 1.39243, 0.138959, -1.47584, 0.229329, 1.41016, 0.0537625, -0.508487, 301.041, 1.18248, 349.351)
+transform = Transform3D(1.35005, 0.0256126, -0.653225, -0.242289, -1.3725, -0.554567, -0.607169, 0.604641, -1.23116, 322.77, 17.792, 404.261)
