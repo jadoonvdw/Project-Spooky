@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cp1oj3mvkqe3"]
+[gd_scene load_steps=13 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
 [ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/World.tscn" id="1_gbygh"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
 [ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/car_tent.tscn" id="5_sf63b"]
 [ext_resource type="PackedScene" uid="uid://b77p78x251kad" path="res://World/car.tscn" id="6_nluqf"]
+[ext_resource type="AudioStream" uid="uid://ctq5vkr2f51wa" path="res://audio/ambient_sounds/forest_night.mp3" id="7_62he0"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_13b6p"]
 panorama = ExtResource("1_5e3dg")
@@ -39,6 +40,20 @@ adjustment_saturation = 0.6
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_sfylq"]
 dof_blur_far_distance = 30.0
 
+[sub_resource type="GDScript" id="GDScript_xd8w0"]
+script/source = "extends AudioStreamPlayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
 [node name="main" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -65,5 +80,8 @@ transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848
 [node name="Car" parent="." instance=ExtResource("6_nluqf")]
 transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.138959, -1.47584, 0.229329, -0.65378, -0.267187, -1.32333, 318.194, 14.8804, 395.251)
 
-[node name="ambientWoodsNoise" type="AudioStreamPlayer3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 229.662, 0, 215.938)
+[node name="ambientForestSounds" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_62he0")
+volume_db = -19.0
+autoplay = true
+script = SubResource("GDScript_xd8w0")
