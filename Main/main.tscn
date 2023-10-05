@@ -63,7 +63,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.236, 13.3404, 384.738)
 transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)
 
 [node name="Car" parent="." instance=ExtResource("6_nluqf")]
-transform = Transform3D(0.492077, 0.262699, 1.39243, 0.138959, -1.47584, 0.229329, 1.41016, 0.0537625, -0.508487, 301.041, 1.18248, 349.351)
+transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.138959, -1.47584, 0.229329, -0.65378, -0.267187, -1.32333, 318.194, 14.8804, 395.251)
 
 [node name="ambientWoodsNoise" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 229.662, 0, 215.938)
