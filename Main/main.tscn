@@ -29,7 +29,6 @@ fog_density = 0.5342
 fog_sky_affect = 0.75
 fog_height = 1.0
 fog_height_density = -5.0
-volumetric_fog_enabled = true
 volumetric_fog_density = 0.11
 volumetric_fog_albedo = Color(0.992157, 0.992157, 0.992157, 1)
 volumetric_fog_sky_affect = 0.95
@@ -56,7 +55,7 @@ camera_attributes = SubResource("CameraAttributesPractical_sfylq")
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.13835, 213.856)
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(1.83351, 0, 0.798906, 0, 2, 0, -0.798906, 0, 1.83351, 310.179, 11.6445, 385.308)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 309.616, 13.3538, 387.29)
 
 [node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
 
