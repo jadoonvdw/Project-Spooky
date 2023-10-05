@@ -144,7 +144,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("1_u3jr6")
 metallic = 0.35
 roughness = 0.5
@@ -189,7 +188,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("2_8evqc")
 metallic = 0.35
 roughness = 0.5
@@ -232,7 +230,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("3_og668")
 metallic = 0.35
 roughness = 0.5
@@ -272,7 +269,6 @@ shadow_mesh = SubResource("ArrayMesh_ex27n")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7jw06"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("4_o8dvw")
 metallic = 0.35
 roughness = 0.5
@@ -312,7 +308,6 @@ shadow_mesh = SubResource("ArrayMesh_dtfds")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hr7uy"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("5_0ko8t")
 metallic = 0.35
 roughness = 0.5
@@ -352,7 +347,6 @@ shadow_mesh = SubResource("ArrayMesh_nb657")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1jwb"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("6_y3ccs")
 metallic = 0.35
 roughness = 0.5
@@ -392,7 +386,6 @@ shadow_mesh = SubResource("ArrayMesh_j2dsr")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dq1c4"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("7_pqmmh")
 metallic = 0.35
 roughness = 0.5
@@ -432,7 +425,6 @@ shadow_mesh = SubResource("ArrayMesh_jvuyo")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rk5ot"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("8_7yqyi")
 metallic = 0.35
 roughness = 0.5
@@ -443,7 +435,6 @@ texture_filter = 1
 resource_name = "signs"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("9_rarx6")
 metallic = 0.35
 roughness = 0.5
@@ -503,7 +494,6 @@ shadow_mesh = SubResource("ArrayMesh_qlvoo")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hs23g"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("10_o1yhh")
 metallic = 0.35
 roughness = 0.5
@@ -514,7 +504,6 @@ texture_filter = 1
 resource_name = "signs"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("11_bwcd2")
 metallic = 0.35
 roughness = 0.5
@@ -576,7 +565,6 @@ shadow_mesh = SubResource("ArrayMesh_4h3vs")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h65ut"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("12_0uegv")
 metallic = 0.35
 roughness = 0.5
@@ -587,7 +575,6 @@ texture_filter = 1
 resource_name = "signs"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("13_1l6ep")
 metallic = 0.35
 roughness = 0.5
@@ -649,7 +636,6 @@ shadow_mesh = SubResource("ArrayMesh_aercy")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ueruh"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("14_wgb3u")
 metallic = 0.35
 roughness = 0.5
@@ -659,7 +645,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pksu8"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("15_ieqp7")
 metallic = 0.35
 roughness = 0.5
@@ -719,7 +704,6 @@ shadow_mesh = SubResource("ArrayMesh_spacy")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rkf4e"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("16_0gjwy")
 metallic = 0.35
 roughness = 0.5
@@ -759,7 +743,6 @@ shadow_mesh = SubResource("ArrayMesh_3dptd")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ku1cf"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("17_jfj8w")
 metallic = 0.35
 roughness = 0.5
@@ -800,7 +783,6 @@ shadow_mesh = SubResource("ArrayMesh_m31ba")
 resource_name = "signs"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("18_6rycw")
 metallic = 0.35
 roughness = 0.5
@@ -841,7 +823,6 @@ shadow_mesh = SubResource("ArrayMesh_ce6mx")
 resource_name = "signs"
 transparency = 4
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("19_74yay")
 metallic = 0.35
 roughness = 0.5
@@ -881,7 +862,6 @@ shadow_mesh = SubResource("ArrayMesh_jsmt1")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kryl1"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("20_qxfqd")
 metallic = 0.35
 roughness = 0.5
@@ -891,7 +871,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kli65"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("21_t38au")
 metallic = 0.35
 roughness = 0.5
@@ -901,7 +880,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ssd43"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("22_n7ej8")
 metallic = 0.35
 roughness = 0.5
@@ -981,7 +959,6 @@ shadow_mesh = SubResource("ArrayMesh_qec1v")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_344nx"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("23_7cmwp")
 metallic = 0.35
 roughness = 0.5
@@ -991,7 +968,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1tw2j"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("24_bsxbl")
 metallic = 0.35
 roughness = 0.5
@@ -1001,7 +977,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8hau"]
 resource_name = "dirt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("25_611r5")
 metallic = 0.35
 roughness = 0.5
@@ -1011,7 +986,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkcue"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("26_vau6g")
 metallic = 0.35
 roughness = 0.5
@@ -1111,7 +1085,6 @@ shadow_mesh = SubResource("ArrayMesh_dfjk4")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pwsrt"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("27_7f7ua")
 metallic = 0.35
 roughness = 0.5
@@ -1151,7 +1124,6 @@ shadow_mesh = SubResource("ArrayMesh_mykuu")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8a85"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("28_cgh2w")
 metallic = 0.35
 roughness = 0.5
@@ -1191,7 +1163,6 @@ shadow_mesh = SubResource("ArrayMesh_ltwr7")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pytx3"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("29_4phpq")
 metallic = 0.35
 roughness = 0.5
@@ -1201,7 +1172,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s2ikn"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("30_mgsx8")
 metallic = 0.35
 roughness = 0.5
@@ -1261,7 +1231,6 @@ shadow_mesh = SubResource("ArrayMesh_ylrx6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x1x4k"]
 resource_name = "doors"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("31_64y8k")
 metallic = 0.35
 roughness = 0.5
@@ -1271,7 +1240,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhdg1"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("32_cjwtb")
 metallic = 0.35
 roughness = 0.5
@@ -1331,7 +1299,6 @@ shadow_mesh = SubResource("ArrayMesh_fvyrs")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57fxk"]
 resource_name = "doors"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("33_ft85l")
 metallic = 0.35
 roughness = 0.5
@@ -1341,7 +1308,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16tce"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("34_k6dt3")
 metallic = 0.35
 roughness = 0.5
@@ -1401,7 +1367,6 @@ shadow_mesh = SubResource("ArrayMesh_hqkpe")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ojokn"]
 resource_name = "grass"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("35_4clxq")
 metallic = 0.35
 roughness = 0.5
@@ -1441,7 +1406,6 @@ shadow_mesh = SubResource("ArrayMesh_r3yq8")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdfcu"]
 resource_name = "asphalt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("36_kir22")
 metallic = 0.35
 roughness = 0.5
@@ -1481,7 +1445,6 @@ shadow_mesh = SubResource("ArrayMesh_8872u")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fp174"]
 resource_name = "asphalt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("37_7qbxe")
 metallic = 0.35
 roughness = 0.5
@@ -1491,7 +1454,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8y42h"]
 resource_name = "concreteSmooth"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("38_a484i")
 metallic = 0.35
 roughness = 0.5
@@ -1551,7 +1513,6 @@ shadow_mesh = SubResource("ArrayMesh_yqcqw")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7r0yi"]
 resource_name = "concreteSmooth"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("39_ebbbu")
 metallic = 0.35
 roughness = 0.5
@@ -1561,7 +1522,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pudp6"]
 resource_name = "asphalt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("40_rtuxo")
 metallic = 0.35
 roughness = 0.5
@@ -1621,7 +1581,6 @@ shadow_mesh = SubResource("ArrayMesh_fdq5a")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rxykr"]
 resource_name = "concreteSmooth"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("41_1uau2")
 metallic = 0.35
 roughness = 0.5
@@ -1661,7 +1620,6 @@ shadow_mesh = SubResource("ArrayMesh_ywd6d")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3urqa"]
 resource_name = "asphalt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("42_3mmaq")
 metallic = 0.35
 roughness = 0.5
@@ -1671,7 +1629,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drlgw"]
 resource_name = "concreteSmooth"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("43_sib0j")
 metallic = 0.35
 roughness = 0.5
@@ -1731,7 +1688,6 @@ shadow_mesh = SubResource("ArrayMesh_1aqkt")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_356os"]
 resource_name = "dirt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("44_1ku8u")
 metallic = 0.35
 roughness = 0.5
@@ -1771,7 +1727,6 @@ shadow_mesh = SubResource("ArrayMesh_88akb")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rlu7e"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("45_jycgu")
 metallic = 0.35
 roughness = 0.5
@@ -1781,7 +1736,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ysbgc"]
 resource_name = "dirt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("46_vy1gc")
 metallic = 0.35
 roughness = 0.5
@@ -1841,7 +1795,6 @@ shadow_mesh = SubResource("ArrayMesh_ml1iy")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jf58s"]
 resource_name = "dirt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("47_eitm0")
 metallic = 0.35
 roughness = 0.5
@@ -1851,7 +1804,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0gp7y"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("48_qt5il")
 metallic = 0.35
 roughness = 0.5
@@ -1911,7 +1863,6 @@ shadow_mesh = SubResource("ArrayMesh_wb3sq")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5wp5d"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("49_cyq35")
 metallic = 0.35
 roughness = 0.5
@@ -1951,7 +1902,6 @@ shadow_mesh = SubResource("ArrayMesh_kxmes")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a4q5b"]
 resource_name = "dirt"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("50_kv50w")
 metallic = 0.35
 roughness = 0.5
@@ -1961,7 +1911,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_twd3k"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("51_y4x56")
 metallic = 0.35
 roughness = 0.5
@@ -2021,7 +1970,6 @@ shadow_mesh = SubResource("ArrayMesh_gq4bd")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hry5r"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("52_48oty")
 metallic = 0.35
 roughness = 0.5
@@ -2061,7 +2009,6 @@ shadow_mesh = SubResource("ArrayMesh_xb5du")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fl1bs"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("53_ddfmc")
 metallic = 0.35
 roughness = 0.5
@@ -2071,7 +2018,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmw40"]
 resource_name = "roof_plates"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("54_tj8q7")
 metallic = 0.35
 roughness = 0.5
@@ -2131,7 +2077,6 @@ shadow_mesh = SubResource("ArrayMesh_jja5u")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2p0s"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("55_if0r7")
 metallic = 0.35
 roughness = 0.5
@@ -2141,7 +2086,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nlra3"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("56_i2rey")
 metallic = 0.35
 roughness = 0.5
@@ -2201,7 +2145,6 @@ shadow_mesh = SubResource("ArrayMesh_75h3n")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibwuk"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("57_4rwhl")
 metallic = 0.35
 roughness = 0.5
@@ -2241,7 +2184,6 @@ shadow_mesh = SubResource("ArrayMesh_fes6e")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0h48u"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("58_5qi43")
 metallic = 0.35
 roughness = 0.5
@@ -2254,7 +2196,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("59_detcj")
 metallic = 0.35
 roughness = 0.5
@@ -2317,7 +2258,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("60_pbn5m")
 metallic = 0.35
 roughness = 0.5
@@ -2362,7 +2302,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("61_coh33")
 metallic = 0.35
 roughness = 0.5
@@ -2407,7 +2346,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("62_0mx4r")
 metallic = 0.35
 roughness = 0.5
@@ -2449,7 +2387,6 @@ shadow_mesh = SubResource("ArrayMesh_8a5om")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tehy"]
 resource_name = "truck"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("63_cmbyc")
 metallic = 0.35
 roughness = 0.5
@@ -2459,7 +2396,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m20f3"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("64_6hr7k")
 metallic = 0.35
 roughness = 0.5
@@ -2519,7 +2455,6 @@ shadow_mesh = SubResource("ArrayMesh_40570")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h87jo"]
 resource_name = "truck"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("65_edcky")
 metallic = 0.35
 roughness = 0.5
@@ -2559,7 +2494,6 @@ shadow_mesh = SubResource("ArrayMesh_ue5ai")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ew3r"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("66_3ufng")
 metallic = 0.35
 roughness = 0.5
@@ -2569,7 +2503,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2j3lu"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("67_gma35")
 metallic = 0.35
 roughness = 0.5
@@ -2629,7 +2562,6 @@ shadow_mesh = SubResource("ArrayMesh_8ijmr")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ynvy"]
 resource_name = "_defaultMat"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.35
 roughness = 0.5
 emission_enabled = true
@@ -2637,7 +2569,6 @@ emission_enabled = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oj7ex"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("68_t7xhj")
 metallic = 0.35
 roughness = 0.5
@@ -2647,7 +2578,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oou6v"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("69_ddwvs")
 metallic = 0.35
 roughness = 0.5
@@ -2727,7 +2657,6 @@ shadow_mesh = SubResource("ArrayMesh_h5cy6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h320l"]
 resource_name = "_defaultMat"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.35
 roughness = 0.5
 emission_enabled = true
@@ -2735,7 +2664,6 @@ emission_enabled = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kakj5"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("70_2lfn5")
 metallic = 0.35
 roughness = 0.5
@@ -2745,7 +2673,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gk4g3"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("71_7f8cv")
 metallic = 0.35
 roughness = 0.5
@@ -2825,7 +2752,6 @@ shadow_mesh = SubResource("ArrayMesh_7v7us")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6e4o"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("72_gt114")
 metallic = 0.35
 roughness = 0.5
@@ -2865,7 +2791,6 @@ shadow_mesh = SubResource("ArrayMesh_qjfen")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_413py"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("73_4hmxm")
 metallic = 0.35
 roughness = 0.5
@@ -2875,7 +2800,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ucel"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("74_08g6n")
 metallic = 0.35
 roughness = 0.5
@@ -2885,7 +2809,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wh52i"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("75_h0ei2")
 metallic = 0.35
 roughness = 0.5
@@ -2965,7 +2888,6 @@ shadow_mesh = SubResource("ArrayMesh_c8ql3")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lvl6s"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("76_jo8xx")
 metallic = 0.35
 roughness = 0.5
@@ -3005,7 +2927,6 @@ shadow_mesh = SubResource("ArrayMesh_avfn8")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_un182"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("77_x04kl")
 metallic = 0.35
 roughness = 0.5
@@ -3015,7 +2936,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fsmhs"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("78_k44oi")
 metallic = 0.35
 roughness = 0.5
@@ -3075,7 +2995,6 @@ shadow_mesh = SubResource("ArrayMesh_soitd")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yllk8"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("79_mj617")
 metallic = 0.35
 roughness = 0.5
@@ -3085,7 +3004,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36fnb"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("80_w8twk")
 metallic = 0.35
 roughness = 0.5
@@ -3145,7 +3063,6 @@ shadow_mesh = SubResource("ArrayMesh_wkmci")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p0mxh"]
 resource_name = "wall"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("81_l8ilq")
 metallic = 0.35
 roughness = 0.5
@@ -3155,7 +3072,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ypxlp"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("82_lv2io")
 metallic = 0.35
 roughness = 0.5
@@ -3215,7 +3131,6 @@ shadow_mesh = SubResource("ArrayMesh_iplp6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wgw1w"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("83_n7nn3")
 metallic = 0.35
 roughness = 0.5
@@ -3225,7 +3140,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qyvf"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("84_xy8um")
 metallic = 0.35
 roughness = 0.5
@@ -3235,7 +3149,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cb85k"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("85_dgmlf")
 metallic = 0.35
 roughness = 0.5
@@ -3315,7 +3228,6 @@ shadow_mesh = SubResource("ArrayMesh_mp62g")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u875s"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("86_k8t1q")
 metallic = 0.35
 roughness = 0.5
@@ -3325,7 +3237,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3hy5"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("87_1lxtg")
 metallic = 0.35
 roughness = 0.5
@@ -3335,7 +3246,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n1psh"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("88_6ymdv")
 metallic = 0.35
 roughness = 0.5
@@ -3415,7 +3325,6 @@ shadow_mesh = SubResource("ArrayMesh_kb1c6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqa22"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("89_shcrq")
 metallic = 0.35
 roughness = 0.5
@@ -3425,7 +3334,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cqclk"]
 resource_name = "roof"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("90_615f7")
 metallic = 0.35
 roughness = 0.5
@@ -3435,7 +3343,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1huk"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("91_8ynjo")
 metallic = 0.35
 roughness = 0.5
@@ -3517,7 +3424,6 @@ shadow_mesh = SubResource("ArrayMesh_0m1yt")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3nac"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("92_5a2ag")
 metallic = 0.35
 roughness = 0.5
@@ -3527,7 +3433,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1l0fo"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("93_o5da2")
 metallic = 0.35
 roughness = 0.5
@@ -3587,7 +3492,6 @@ shadow_mesh = SubResource("ArrayMesh_jispf")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mx5tv"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("94_1uoa4")
 metallic = 0.35
 roughness = 0.5
@@ -3597,7 +3501,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dvjxu"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("95_d1agb")
 metallic = 0.35
 roughness = 0.5
@@ -3607,7 +3510,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5wed"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("96_6ot0j")
 metallic = 0.35
 roughness = 0.5
@@ -3617,7 +3519,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11smj"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("97_64vhj")
 metallic = 0.35
 roughness = 0.5
@@ -3717,7 +3618,6 @@ shadow_mesh = SubResource("ArrayMesh_o16yr")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gkdm4"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("98_1hxck")
 metallic = 0.35
 roughness = 0.5
@@ -3727,7 +3627,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ph72"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("99_fjcc3")
 metallic = 0.35
 roughness = 0.5
@@ -3787,7 +3686,6 @@ shadow_mesh = SubResource("ArrayMesh_8orcw")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hxeb"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("100_3pkwn")
 metallic = 0.35
 roughness = 0.5
@@ -3797,7 +3695,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hh7fi"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("101_wpsa7")
 metallic = 0.35
 roughness = 0.5
@@ -3857,7 +3754,6 @@ shadow_mesh = SubResource("ArrayMesh_l7lpx")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slnmw"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("102_dtx5g")
 metallic = 0.35
 roughness = 0.5
@@ -3897,7 +3793,6 @@ shadow_mesh = SubResource("ArrayMesh_byf60")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lndaq"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("103_bqaa0")
 metallic = 0.35
 roughness = 0.5
@@ -3907,7 +3802,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tpbr5"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("104_i275o")
 metallic = 0.35
 roughness = 0.5
@@ -3917,7 +3811,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6mvi"]
 resource_name = "wall_garage"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("105_4nn43")
 metallic = 0.35
 roughness = 0.5
@@ -3997,7 +3890,6 @@ shadow_mesh = SubResource("ArrayMesh_eg4uo")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ayds5"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("106_65n2q")
 metallic = 0.35
 roughness = 0.5
@@ -4007,7 +3899,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dl1ue"]
 resource_name = "wall_garage"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("107_yi5ac")
 metallic = 0.35
 roughness = 0.5
@@ -4067,7 +3958,6 @@ shadow_mesh = SubResource("ArrayMesh_mgaju")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_itnqx"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("108_mcdy5")
 metallic = 0.35
 roughness = 0.5
@@ -4077,7 +3967,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjlb8"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("109_oyjjh")
 metallic = 0.35
 roughness = 0.5
@@ -4137,7 +4026,6 @@ shadow_mesh = SubResource("ArrayMesh_ci0mr")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36nkb"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("110_sv2hm")
 metallic = 0.35
 roughness = 0.5
@@ -4147,7 +4035,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6acw"]
 resource_name = "roof_plates"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("111_nlktx")
 metallic = 0.35
 roughness = 0.5
@@ -4157,7 +4044,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg1tr"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("112_5ftmw")
 metallic = 0.35
 roughness = 0.5
@@ -4237,7 +4123,6 @@ shadow_mesh = SubResource("ArrayMesh_t64xl")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0gtki"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("113_q8hsd")
 metallic = 0.35
 roughness = 0.5
@@ -4247,7 +4132,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uctxx"]
 resource_name = "roof_plates"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("114_gwfl4")
 metallic = 0.35
 roughness = 0.5
@@ -4257,7 +4141,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0k42h"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("115_wwbjd")
 metallic = 0.35
 roughness = 0.5
@@ -4337,7 +4220,6 @@ shadow_mesh = SubResource("ArrayMesh_1j7ni")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i8on0"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("116_bx6cg")
 metallic = 0.35
 roughness = 0.5
@@ -4347,7 +4229,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4vjtp"]
 resource_name = "roof_plates"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("117_bskt8")
 metallic = 0.35
 roughness = 0.5
@@ -4357,7 +4238,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kh5tt"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("118_4qui8")
 metallic = 0.35
 roughness = 0.5
@@ -4439,7 +4319,6 @@ shadow_mesh = SubResource("ArrayMesh_3ojc4")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aw4p8"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("119_ro0er")
 metallic = 0.35
 roughness = 0.5
@@ -4449,7 +4328,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7f2w"]
 resource_name = "wall_metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("120_dgb0v")
 metallic = 0.35
 roughness = 0.5
@@ -4459,7 +4337,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1jr1"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("121_8vl2n")
 metallic = 0.35
 roughness = 0.5
@@ -4469,7 +4346,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t2yyy"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("122_nx522")
 metallic = 0.35
 roughness = 0.5
@@ -4572,7 +4448,6 @@ transparency = 2
 alpha_scissor_threshold = 0.5
 alpha_antialiasing_mode = 0
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("123_6fa1h")
 metallic = 0.35
 roughness = 0.5
@@ -4612,7 +4487,6 @@ shadow_mesh = SubResource("ArrayMesh_65ptb")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3j4m1"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("124_pag7q")
 metallic = 0.35
 roughness = 0.5
@@ -4622,7 +4496,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pw0eo"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("125_ph6f0")
 metallic = 0.35
 roughness = 0.5
@@ -4682,7 +4555,6 @@ shadow_mesh = SubResource("ArrayMesh_omshk")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_udjve"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("126_g7lwe")
 metallic = 0.35
 roughness = 0.5
@@ -4692,7 +4564,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_adaw8"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("127_2lcxi")
 metallic = 0.35
 roughness = 0.5
@@ -4752,7 +4623,6 @@ shadow_mesh = SubResource("ArrayMesh_6fnj0")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8pvau"]
 resource_name = "wall_lines"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("128_1m8sa")
 metallic = 0.35
 roughness = 0.5
@@ -4762,7 +4632,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tlphh"]
 resource_name = "concrete"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("129_5710l")
 metallic = 0.35
 roughness = 0.5
@@ -4822,7 +4691,6 @@ shadow_mesh = SubResource("ArrayMesh_p28mj")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_spqk5"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("130_tovtg")
 metallic = 0.35
 roughness = 0.5
@@ -4832,7 +4700,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6vih8"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("131_2fh1v")
 metallic = 0.35
 roughness = 0.5
@@ -4892,7 +4759,6 @@ shadow_mesh = SubResource("ArrayMesh_7cyqv")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pspb8"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("132_srq7i")
 metallic = 0.35
 roughness = 0.5
@@ -4902,7 +4768,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aaik7"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("133_r00fw")
 metallic = 0.35
 roughness = 0.5
@@ -4962,7 +4827,6 @@ shadow_mesh = SubResource("ArrayMesh_kceuf")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rmk8j"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("134_85rtv")
 metallic = 0.35
 roughness = 0.5
@@ -4972,7 +4836,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ptedu"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("135_em2q2")
 metallic = 0.35
 roughness = 0.5
@@ -5032,7 +4895,6 @@ shadow_mesh = SubResource("ArrayMesh_db50q")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_doyt7"]
 resource_name = "windows"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("136_l6qxa")
 metallic = 0.35
 roughness = 0.5
@@ -5042,7 +4904,6 @@ texture_filter = 1
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j535e"]
 resource_name = "metal"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource("137_rf7ut")
 metallic = 0.35
 roughness = 0.5

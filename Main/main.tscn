@@ -29,7 +29,6 @@ fog_density = 0.5342
 fog_sky_affect = 0.75
 fog_height = 1.0
 fog_height_density = -5.0
-volumetric_fog_enabled = true
 volumetric_fog_density = 0.11
 volumetric_fog_albedo = Color(0.992157, 0.992157, 0.992157, 1)
 volumetric_fog_sky_affect = 0.95
@@ -56,12 +55,12 @@ camera_attributes = SubResource("CameraAttributesPractical_sfylq")
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.13835, 213.856)
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(1.83351, 0, 0.798906, 0, 2, 0, -0.798906, 0, 1.83351, 310.179, 11.6445, 385.308)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.179, 11.9547, 385.308)
 
 [node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
 
 [node name="Tent Scene" parent="." instance=ExtResource("5_sf63b")]
 transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)
 
-[node name="Node3D" parent="." instance=ExtResource("6_nluqf")]
+[node name="Car" parent="." instance=ExtResource("6_nluqf")]
 transform = Transform3D(0.492077, 0.262699, 1.39243, 0.138959, -1.47584, 0.229329, 1.41016, 0.0537625, -0.508487, 301.041, 1.18248, 349.351)

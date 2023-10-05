@@ -7,8 +7,8 @@ const JUMP_VELOCITY = 4.8
 const SENSITIVITY = 0.002
 
 #bob variables
-const BOB_FREQ = 4.0
-const BOB_AMP = 0.06
+const BOB_FREQ = 3.2
+const BOB_AMP = 0.04
 var t_bob = 0.0
 
 #fov variables
