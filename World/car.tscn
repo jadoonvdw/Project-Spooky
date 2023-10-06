@@ -1,12 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://b77p78x251kad"]
+[gd_scene load_steps=12 format=3 uid="uid://b77p78x251kad"]
 
 [ext_resource type="Texture2D" uid="uid://8lfu3h7kuxcn" path="res://World_assets/Cars/Car 03/car3.png" id="1_rfofi"]
 [ext_resource type="Script" path="res://World/car.gd" id="1_xu5ix"]
 [ext_resource type="Texture2D" uid="uid://bameasptmnm3i" path="res://World_assets/Cars/Car 03/car3emission.png" id="2_ec0un"]
 [ext_resource type="ArrayMesh" uid="uid://fithej7ak2wi" path="res://World_assets/Cars/Car 03/Car3.obj" id="3_bgbnn"]
+[ext_resource type="AudioStream" uid="uid://cagt54l7hrq1d" path="res://audio/ambient_sounds/light_buzz.mp3" id="5_fslqj"]
+[ext_resource type="AudioStream" uid="uid://imtu52l5xowe" path="res://audio/ambient_sounds/radio_noise_car.mp3" id="6_mqgj1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xxr2h"]
-size = Vector3(4.066, 2.17268, 1)
+size = Vector3(2.04744, 3.09534, 1.26739)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0kjn8"]
 albedo_texture = ExtResource("1_rfofi")
@@ -55,7 +57,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_4dx3y"]
 resource_name = "flicker"
-loop_mode = 1
+length = 0.1
 step = 0.0111111
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -64,10 +66,10 @@ tracks/0/path = NodePath("StaticBody3D/Car3/SpotLight3D2:light_energy")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.3, 0.333333, 0.366667, 0.65, 0.683333, 0.716667, 0.933333, 0.966667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3),
+"times": PackedFloat32Array(0, 0.035, 0.065, 0.0999),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [8.0, 0.0, 8.0, 8.0, 0.0, 8.0, 8.0, 0.0, 0.0, 8.0, 0.0]
+"values": [8.0, 0.0, 8.0, 8.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -76,10 +78,10 @@ tracks/1/path = NodePath("StaticBody3D/Car3/SpotLight3D:light_energy")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.3, 0.333333, 0.366667, 0.65, 0.683333, 0.716667, 0.933333, 0.966667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3),
+"times": PackedFloat32Array(0, 0.035, 0.065, 0.0999999),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [8.0, 0.0, 8.0, 8.0, 0.0, 8.0, 8.0, 0.0, 0.0, 8.0, 0.0]
+"values": [8.0, 0.0, 8.0, 8.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -88,7 +90,7 @@ tracks/2/path = NodePath("StaticBody3D/Car3:material_overlay:emission_enabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.3, 0.333333, 0.366667, 0.65, 0.683333, 0.933333, 0.966667),
+"times": PackedFloat32Array(0, 0.035, 0.065, 0.0999, 0.333333, 0.366667, 0.65, 0.683333, 0.933333, 0.966667),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 3, 3),
 "update": 1,
 "values": [true, false, true, true, false, true, true, false, true, false]
@@ -107,7 +109,7 @@ script = ExtResource("1_xu5ix")
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 5.96046e-07, 2.5654)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 8.34465e-07, 2.56865)
 shape = SubResource("BoxShape3D_xxr2h")
 
 [node name="Car3" type="MeshInstance3D" parent="StaticBody3D"]
@@ -120,17 +122,39 @@ skeleton = NodePath("../..")
 transform = Transform3D(-0.750419, -0.660672, 0.0196387, -0.658072, 0.749582, 0.0711886, -0.061753, 0.0404975, -0.99727, -0.73206, 0.817063, 3.00588)
 light_color = Color(0.760784, 0.737255, 0.47451, 1)
 light_energy = 8.0
-spot_range = 35.5392
+light_volumetric_fog_energy = 4.0
+spot_range = 27.0
 spot_angle = 16.2005
 
 [node name="SpotLight3D" type="SpotLight3D" parent="StaticBody3D/Car3"]
 transform = Transform3D(-0.751588, -0.659623, -0.00364189, -0.658507, 0.749971, 0.0625509, -0.0385287, 0.0494107, -0.998035, 0.72159, 0.796077, 3.01262)
 light_color = Color(0.760784, 0.737255, 0.47451, 1)
 light_energy = 8.0
-spot_range = 35.7089
+light_volumetric_fog_energy = 4.0
+distance_fade_enabled = true
+spot_range = 27.0
 spot_angle = 15.8759
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_ffymn")
 }
+
+[node name="lightFlickerTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="lightBuzz" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.371687, 0.831922, 3.26026)
+stream = ExtResource("5_fslqj")
+volume_db = 5.0
+pitch_scale = 0.8
+max_distance = 10.0
+
+[node name="radioNoise" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37389, 1.00773, 0.951826)
+stream = ExtResource("6_mqgj1")
+volume_db = -5.0
+max_db = -4.789
+autoplay = true
+max_distance = 40.0

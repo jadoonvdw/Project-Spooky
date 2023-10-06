@@ -1,10 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://cp1oj3mvkqe3"]
+[gd_scene load_steps=17 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
+[ext_resource type="Script" path="res://Main/main.gd" id="1_amjxq"]
 [ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/Forest.tscn" id="1_gbygh"]
 [ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_om6f5"]
 [ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
 [ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/car_tent.tscn" id="5_sf63b"]
+[ext_resource type="PackedScene" uid="uid://cvulti7c1g3uy" path="res://World_assets/rocks/rock.glb" id="6_7sdx0"]
 [ext_resource type="PackedScene" uid="uid://b77p78x251kad" path="res://World/car.tscn" id="6_nluqf"]
 [ext_resource type="AudioStream" uid="uid://ctq5vkr2f51wa" path="res://audio/ambient_sounds/forest_night.mp3" id="7_62he0"]
 
@@ -31,7 +33,7 @@ fog_sky_affect = 0.75
 fog_height = 1.0
 fog_height_density = -5.0
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.06
+volumetric_fog_density = 0.036
 volumetric_fog_albedo = Color(0.992157, 0.992157, 0.992157, 1)
 volumetric_fog_sky_affect = 0.95
 adjustment_brightness = 1.5
@@ -40,6 +42,12 @@ adjustment_saturation = 0.6
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_sfylq"]
 dof_blur_far_distance = 30.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1h32x"]
+size = Vector3(42.6125, 39.8119, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ydgg8"]
+size = Vector3(10.2846, 3.74599, 19.3762)
 
 [sub_resource type="GDScript" id="GDScript_xd8w0"]
 script/source = "extends AudioStreamPlayer
@@ -56,33 +64,78 @@ func _process(delta):
 "
 
 [node name="main" type="Node3D"]
+script = ExtResource("1_amjxq")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.528264, 0.735326, -0.424539, -1.41025e-08, 0.499998, 0.866026, 0.84908, 0.45749, -0.264131, 242, 0, 173)
+[node name="World Lighting and Fog" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World Lighting and Fog"]
+environment = SubResource("Environment_ejpf4")
+camera_attributes = SubResource("CameraAttributesPractical_sfylq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="World Lighting and Fog"]
+transform = Transform3D(-0.528264, 0.735326, -0.424538, -1.41025e-08, 0.499998, 0.866026, 0.84908, 0.457491, -0.264131, 242, 0, 173)
 light_color = Color(0.447059, 0.545098, 0.713726, 1)
 light_energy = 0.3
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_ejpf4")
-camera_attributes = SubResource("CameraAttributesPractical_sfylq")
+[node name="player" parent="." instance=ExtResource("2_om6f5")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 315.13, 15.9337, 398.401)
 
 [node name="Forest" parent="." instance=ExtResource("1_gbygh")]
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.13835, 213.856)
 
-[node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 310.236, 11.945, 384.738)
-visible = false
-
 [node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
 
-[node name="Tent Scene" parent="." instance=ExtResource("5_sf63b")]
+[node name="Spawn Boulders" type="Node3D" parent="Terrain"]
+
+[node name="boulder1" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(-2.94439, 2.7075, 0, -2.55999, -2.78397, 1.30227, 0.881477, 0.958599, 3.78207, 321.324, 16.1445, 408.44)
+
+[node name="boulder4" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(-2.94439, 2.7075, 0, -2.55999, -2.78397, 1.30227, 0.881477, 0.958599, 3.78207, 287.641, -2.44722, 347.005)
+
+[node name="boulder5" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(3.97184, 1.91568, -1.1277, -1.97306, 1.90911, -3.51533, -1.03151, 3.72462, 2.38184, 288.902, -3.75681, 350.807)
+
+[node name="boulder6" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(-0.0630583, 5.18361, -0.734061, -0.158958, 1.09294, 3.46158, 3.40376, 0.147073, 0.148059, 293.506, -3.21588, 355.302)
+
+[node name="boulder7" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(-0.0641379, 3.85148, -0.556908, -0.161679, 0.81207, 2.62619, 3.46204, 0.109277, 0.112328, 288.689, -1.10225, 354.422)
+
+[node name="boulder2" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(3.5967, 3.47329, 0, -3.47329, 3.5967, 0, 0, 0, 5, 323.98, 20.1764, 411.263)
+
+[node name="boulder3" parent="Terrain/Spawn Boulders" instance=ExtResource("6_7sdx0")]
+transform = Transform3D(3, 0, 0, 0, 1.38525, -2.66103, 0, 2.66103, 1.38525, 318.938, 19.7722, 410.071)
+
+[node name="Landmarks" type="Node3D" parent="."]
+
+[node name="Tent Scene" parent="Landmarks" instance=ExtResource("5_sf63b")]
 transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)
 
 [node name="Car" parent="." instance=ExtResource("6_nluqf")]
 transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.0341706, -1.49951, 0.0178739, -0.66751, -0.0312195, -1.34294, 321.049, 14.8804, 401.757)
 
-[node name="ambientForestSounds" type="AudioStreamPlayer" parent="."]
+[node name="Collision Walls" type="Node3D" parent="."]
+
+[node name="Spawn Wall" type="StaticBody3D" parent="Collision Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 318.79, 15, 400)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision Walls/Spawn Wall"]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -1.01694, -0.913044, -0.685089)
+shape = SubResource("BoxShape3D_1h32x")
+
+[node name="Crater Rock Collision" type="StaticBody3D" parent="Collision Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 294.034, 3.0241, 355.26)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision Walls/Crater Rock Collision"]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -3.57501, -4.01999, -2.9989)
+shape = SubResource("BoxShape3D_ydgg8")
+
+[node name="Sounds" type="Node3D" parent="."]
+
+[node name="ambientForestSounds" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource("7_62he0")
 volume_db = -19.0
 autoplay = true

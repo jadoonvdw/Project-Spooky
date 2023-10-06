@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/forest_night.mp3-c37900bd2f05e9f33fb27305942f
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0
