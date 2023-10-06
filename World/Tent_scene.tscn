@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://x43q4ul6quh0"]
+[gd_scene load_steps=32 format=3 uid="uid://x43q4ul6quh0"]
 
 [ext_resource type="PackedScene" uid="uid://dqj5fnj0crym6" path="res://World_assets/Survival/Models/Survival.fbx" id="1_gynag"]
 [ext_resource type="Shader" path="res://Shadrs/psx.gdshader" id="2_ga4mj"]
@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://dxfw80c0q5466" path="res://World_assets/Survival/Textures/Shelter_tent.png" id="14_104xg"]
 [ext_resource type="Texture2D" uid="uid://dmwvkbq7oy7co" path="res://World_assets/PSX Villager Woman/VillageWomanTexture.png" id="16_leo5x"]
 [ext_resource type="Texture2D" uid="uid://16xv2hxiyumy" path="res://World_assets/BlueRoseSonata Blood FX Pack/bloodspray.png" id="17_lbg6k"]
-[ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="18_wm85r"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_py0ld"]
 render_priority = 0
@@ -308,10 +307,8 @@ visible = false
 visible = false
 
 [node name="Shelter_tent" parent="RootNode" index="29"]
-transform = Transform3D(319.752, 0, 0, 0, -3.81174e-05, 319.752, 0, -319.752, -3.81174e-05, -3.69215, 1.08813, -0.946404)
+transform = Transform3D(319.752, 0, 0, 0, -3.81174e-05, 319.752, 0, -319.752, -3.81174e-05, -3.69215, 1.10106, -0.946404)
 material_override = SubResource("ShaderMaterial_sda4v")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="RootNode/Shelter_tent" index="0"]
 
 [node name="Trunk" parent="RootNode" index="30"]
 visible = false
@@ -484,10 +481,3 @@ skin = SubResource("Skin_crto3")
 transform = Transform3D(-0.999615, 0, -0.0277472, -0.000720529, 0.999663, 0.0259576, 0.0277379, 0.0259676, -0.999278, -2.18768, -0.0130814, 0.339553)
 texture_albedo = ExtResource("17_lbg6k")
 emission_energy = 0.0
-
-[node name="CSGBox3D" type="CSGBox3D" parent="." index="2"]
-use_collision = true
-size = Vector3(30, 1, 30)
-
-[node name="player" parent="." index="3" instance=ExtResource("18_wm85r")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -1.83843, 1.54362, 4.03378)

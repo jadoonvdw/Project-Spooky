@@ -11,11 +11,7 @@
 [ext_resource type="Script" path="res://addons/proton_scatter/src/scatter_shape.gd" id="10_erjx4"]
 [ext_resource type="Script" path="res://addons/proton_scatter/src/shapes/box_shape.gd" id="11_8nb71"]
 
-<<<<<<< Updated upstream
 [sub_resource type="Resource" id="Resource_oa83x"]
-=======
-[sub_resource type="Resource" id="Resource_aa61j"]
->>>>>>> Stashed changes
 script = ExtResource("4_kic4d")
 amount = 1000
 enabled = true
@@ -24,11 +20,7 @@ custom_seed = 8949816487422172
 restrict_height = true
 reference_frame = 1
 
-<<<<<<< Updated upstream
 [sub_resource type="Resource" id="Resource_wv8i8"]
-=======
-[sub_resource type="Resource" id="Resource_0xnbb"]
->>>>>>> Stashed changes
 script = ExtResource("5_n2oew")
 position = Vector3(0.15, 0.15, 0.15)
 rotation = Vector3(10, 360, 5)
@@ -39,11 +31,7 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-<<<<<<< Updated upstream
 [sub_resource type="Resource" id="Resource_yrfuq"]
-=======
-[sub_resource type="Resource" id="Resource_qge6w"]
->>>>>>> Stashed changes
 script = ExtResource("6_vfhyc")
 iterations = 3
 offset_step = 0.2
@@ -55,11 +43,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 0
 
-<<<<<<< Updated upstream
 [sub_resource type="Resource" id="Resource_bp5f2"]
-=======
-[sub_resource type="Resource" id="Resource_llsbj"]
->>>>>>> Stashed changes
 script = ExtResource("7_nwlw3")
 ray_direction = Vector3(0, -1, 0)
 ray_length = 5.0
@@ -75,15 +59,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 0
 
-<<<<<<< Updated upstream
 [sub_resource type="Resource" id="Resource_aifdu"]
 script = ExtResource("3_4iwdy")
 stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_oa83x"), SubResource("Resource_wv8i8"), SubResource("Resource_yrfuq"), SubResource("Resource_bp5f2")])
-=======
-[sub_resource type="Resource" id="Resource_b52uy"]
-script = ExtResource("3_4iwdy")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_aa61j"), SubResource("Resource_0xnbb"), SubResource("Resource_qge6w"), SubResource("Resource_llsbj")])
->>>>>>> Stashed changes
 
 [sub_resource type="Resource" id="Resource_23ure"]
 script = ExtResource("9_qosfv")
@@ -109,11 +87,7 @@ size = Vector3(82.2545, 1, 86.6354)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18914, 0.92861, 0)
 script = ExtResource("3_543vm")
 keep_static_colliders = true
-<<<<<<< Updated upstream
 modifier_stack = SubResource("Resource_aifdu")
-=======
-modifier_stack = SubResource("Resource_b52uy")
->>>>>>> Stashed changes
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
