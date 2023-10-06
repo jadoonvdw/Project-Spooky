@@ -3,9 +3,13 @@
 [ext_resource type="Script" path="res://Player/CharacterBody3D.gd" id="1_shwrh"]
 [ext_resource type="Shader" path="res://Player/psx_post.gdshader" id="2_bv3di"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m0luk"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qr46q"]
+radius = 0.2
+height = 0.6
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dt20r"]
+radius = 0.2
+height = 0.6
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xr1hi"]
 shader = ExtResource("2_bv3di")
@@ -20,7 +24,7 @@ shader_parameter/dither_size = 2
 script = ExtResource("1_shwrh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-shape = SubResource("CapsuleShape3D_m0luk")
+shape = SubResource("CapsuleShape3D_qr46q")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_dt20r")
@@ -28,7 +32,7 @@ mesh = SubResource("CapsuleMesh_dt20r")
 [node name="Head" type="Node3D" parent="CharacterBody3D"]
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.400028, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28026, 0)
 fov = 60.0
 far = 1000.0
 
@@ -42,7 +46,7 @@ handle_input_locally = false
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head/Camera3D/SubViewportContainer/SubViewport"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.291449, 0)
 fov = 45.0
 far = 1000.0
 

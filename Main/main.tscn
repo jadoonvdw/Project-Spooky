@@ -1,12 +1,19 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=17 format=3 uid="uid://cp1oj3mvkqe3"]
+=======
+[gd_scene load_steps=12 format=3 uid="uid://cp1oj3mvkqe3"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
 [ext_resource type="Script" path="res://Main/main.gd" id="1_amjxq"]
 [ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/Forest.tscn" id="1_gbygh"]
-[ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_om6f5"]
 [ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/car_tent.tscn" id="5_sf63b"]
 [ext_resource type="PackedScene" uid="uid://cvulti7c1g3uy" path="res://World_assets/rocks/rock.glb" id="6_7sdx0"]
+=======
+[ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/tent_scene_final.tscn" id="5_sf63b"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://b77p78x251kad" path="res://World/car.tscn" id="6_nluqf"]
 [ext_resource type="AudioStream" uid="uid://ctq5vkr2f51wa" path="res://audio/ambient_sounds/forest_night.mp3" id="7_62he0"]
 
@@ -82,7 +89,11 @@ shadow_enabled = true
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 315.13, 15.9337, 398.401)
 
 [node name="Forest" parent="." instance=ExtResource("1_gbygh")]
+<<<<<<< Updated upstream
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.35, 213.856)
+=======
+transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.13835, 213.856)
+>>>>>>> Stashed changes
 
 [node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
 
