@@ -5,10 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://bameasptmnm3i" path="res://World_assets/Cars/Car 03/car3emission.png" id="2_ec0un"]
 [ext_resource type="ArrayMesh" uid="uid://fithej7ak2wi" path="res://World_assets/Cars/Car 03/Car3.obj" id="3_bgbnn"]
 [ext_resource type="AudioStream" uid="uid://cagt54l7hrq1d" path="res://audio/ambient_sounds/light_buzz.mp3" id="5_fslqj"]
-[ext_resource type="AudioStream" uid="uid://imtu52l5xowe" path="res://audio/ambient_sounds/radio_noise_car.mp3" id="6_mqgj1"]
+[ext_resource type="AudioStream" uid="uid://d3piu8wecex2r" path="res://audio/ambient_sounds/radio_noise_car_experiment.mp3" id="6_2j1or"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xxr2h"]
-size = Vector3(2.04744, 3.09534, 1.26739)
+size = Vector3(2.04744, 1.2403, 5.32942)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0kjn8"]
 albedo_texture = ExtResource("1_rfofi")
@@ -109,7 +109,7 @@ script = ExtResource("1_xu5ix")
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36962, 8.34465e-07, 2.56865)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.382049, 0.56641, 0.536536)
 shape = SubResource("BoxShape3D_xxr2h")
 
 [node name="Car3" type="MeshInstance3D" parent="StaticBody3D"]
@@ -153,8 +153,8 @@ max_distance = 10.0
 
 [node name="radioNoise" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37389, 1.00773, 0.951826)
-stream = ExtResource("6_mqgj1")
+stream = ExtResource("6_2j1or")
 volume_db = -5.0
-max_db = -4.789
+max_db = -5.0
 autoplay = true
 max_distance = 40.0
