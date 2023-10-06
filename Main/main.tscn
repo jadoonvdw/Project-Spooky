@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bydgtx15kls7v" path="res://World/Forest.tscn" id="1_gbygh"]
 [ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_om6f5"]
 [ext_resource type="PackedScene" uid="uid://bvud0gceipuii" path="res://World/Environment.tscn" id="3_hx25i"]
-[ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/car_tent.tscn" id="5_sf63b"]
+[ext_resource type="PackedScene" uid="uid://bh35xh70gsw6p" path="res://World/tent_scene_final.tscn" id="5_sf63b"]
 [ext_resource type="PackedScene" uid="uid://cvulti7c1g3uy" path="res://World_assets/rocks/rock.glb" id="6_7sdx0"]
 [ext_resource type="PackedScene" uid="uid://b77p78x251kad" path="res://World/car.tscn" id="6_nluqf"]
 [ext_resource type="AudioStream" uid="uid://ctq5vkr2f51wa" path="res://audio/ambient_sounds/forest_night.mp3" id="7_62he0"]
