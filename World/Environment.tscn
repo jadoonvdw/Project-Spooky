@@ -168,6 +168,7 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detailBarrier_typeA4/StaticBody3D"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
+disabled = true
 
 [node name="detailBarrier_typeA5" type="Node3D" parent="."]
 transform = Transform3D(0.967916, -2.6067, -1.12617, -0.421404, -1.30849, 2.66651, -2.80812, -0.702127, -0.788328, 291.086, 18.5724, 395.882)
@@ -183,6 +184,7 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detailBarrier_typeA5/StaticBody3D"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
+disabled = true
 
 [node name="detailBarrier_typeA6" type="Node3D" parent="."]
 transform = Transform3D(2.7969, -1.08142, -0.088658, -0.421404, -1.30849, 2.66651, -0.999879, -2.47353, -1.37181, 284.344, 19.1068, 381.295)
@@ -198,3 +200,4 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="detailBarrier_typeA6/StaticBody3D"]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
+disabled = true
