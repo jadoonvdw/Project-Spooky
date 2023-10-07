@@ -47,7 +47,14 @@ fov = 45.0
 far = 1000.0
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CharacterBody3D/Head/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210032, -0.515584, 0.210367)
-visible = false
-spot_range = 264.107
-spot_angle = 12.1381
+transform = Transform3D(0.999998, -0.00174533, 0, 0.00174427, 0.999389, -0.0348995, 6.09111e-05, 0.0348994, 0.999391, 0, -0.2, 0)
+light_energy = 8.0
+light_volumetric_fog_energy = 0.15
+light_specular = 0.534
+shadow_enabled = true
+distance_fade_begin = 188.95
+distance_fade_length = 0.0
+spot_range = 30.0
+spot_attenuation = 0.864747
+spot_angle = 11.38
+spot_angle_attenuation = 0.450627
