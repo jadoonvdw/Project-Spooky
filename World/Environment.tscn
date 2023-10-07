@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bvud0gceipuii"]
+[gd_scene load_steps=17 format=3 uid="uid://bvud0gceipuii"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_c1eo4"]
 [ext_resource type="Resource" path="res://World/data.hterrain" id="2_a01pd"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://uggct4x6qb02" path="res://World_assets/kenny_retro_GLBS/detailBarrier_typeA_metal.png" id="6_w4lv5"]
 [ext_resource type="Texture2D" uid="uid://dtr1lsnvpam2h" path="res://World_assets/kenny_retro_GLBS/detailBarrier_typeA_signs.png" id="7_8r7xn"]
 [ext_resource type="Texture2D" uid="uid://8b1oxjcdtg44" path="res://World/Environment_slot1_normal_roughness.png" id="7_g1j2d"]
+[ext_resource type="PackedScene" uid="uid://cmvosoy3nawrj" path="res://World/grass.tscn" id="10_8jqvf"]
 
 [sub_resource type="Resource" id="Resource_6drvs"]
 script = ExtResource("3_lhwfx")
@@ -201,3 +202,6 @@ skeleton = NodePath("")
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 311.44, 9.39137, 379.868)
 shape = SubResource("ConvexPolygonShape3D_ovajb")
 disabled = true
+
+[node name="grass" parent="." instance=ExtResource("10_8jqvf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 240.079, 0, 208.886)

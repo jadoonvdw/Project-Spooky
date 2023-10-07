@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://b8bvh2kpglh5e"]
 
 [ext_resource type="Shader" path="res://Shadrs/psx.gdshader" id="1_xapij"]
-[ext_resource type="Texture2D" uid="uid://b4akaj1qva6xu" path="res://World_assets/retro_nature_pack/textures/grass/grass_fall.png" id="2_pq24q"]
+[ext_resource type="Texture2D" uid="uid://bk60w84pdiaq1" path="res://World_assets/retro_nature_pack/textures/grass/grass_summer.png" id="2_o3wqf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p5fsa"]
 render_priority = 0
@@ -10,7 +10,7 @@ shader_parameter/affine_mapping = false
 shader_parameter/alpha_scissor = 0.5
 shader_parameter/jitter = 0.25
 shader_parameter/resolution = Vector2i(320, 240)
-shader_parameter/albedo = ExtResource("2_pq24q")
+shader_parameter/albedo = ExtResource("2_o3wqf")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_27u82"]
 
