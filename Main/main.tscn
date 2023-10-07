@@ -78,7 +78,7 @@ light_energy = 0.3
 shadow_enabled = true
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 315.13, 15.9337, 398.401)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.13, 15.9337, 398.401)
 
 [node name="Forest" parent="." instance=ExtResource("1_gbygh")]
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.35, 213.856)
@@ -111,7 +111,7 @@ transform = Transform3D(3, 0, 0, 0, 1.38525, -2.66103, 0, 2.66103, 1.38525, 318.
 [node name="Landmarks" type="Node3D" parent="."]
 
 [node name="Tent Scene" parent="Landmarks" instance=ExtResource("5_sf63b")]
-transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.390403, 273.239)
+transform = Transform3D(-0.518848, 0, -0.854867, 0, 1, 0, 0.854867, 0, -0.518848, 311.89, -0.477993, 273.239)
 
 [node name="Car" parent="." instance=ExtResource("6_nluqf")]
 transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.0341706, -1.49951, 0.0178739, -0.66751, -0.0312195, -1.34294, 321.049, 14.8804, 401.757)

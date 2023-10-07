@@ -1,8 +1,10 @@
 extends CharacterBody3D
 
 var speed
+var CROUCH_DEPTH = -0.5
 const WALK_SPEED = 2
 const SPRINT_SPEED = 4
+const CROUCH_SPEED = 1
 const JUMP_VELOCITY = 4.8
 const SENSITIVITY = 0.002
 
@@ -18,11 +20,18 @@ const FOV_CHANGE = 1.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = 9.8
 
-@onready var head := $Head
+
+@onready var head = $Head
+
 @onready var camera := $Head/Camera3D
+
 @onready var flashlight := $Head/Camera3D/SpotLight3D
 @onready var ditherCam := $Head/Camera3D/SubViewportContainer/SubViewport/Camera3D
-@onready var ditherViewport := $Head/Camera3D/SubViewportContainer/SubViewport	
+@onready var ditherViewport := $Head/Camera3D/SubViewportContainer/SubViewport
+#variables for crouching
+@onready var stand = $Stand
+@onready var crouch = $Crouch
+@onready var ray_cast_3d = $RayCast3D
 
 #Mouse capture and camera control
 func _unhandled_input(event):
@@ -38,6 +47,26 @@ func _unhandled_input(event):
 			
 #Character movement code
 func _physics_process(delta):
+	
+	#crouch and sprint code
+	if Input.is_action_pressed("crouch"):
+		speed = CROUCH_SPEED
+		head.position.y = lerp(head.position.y,0.6 + CROUCH_DEPTH,delta*10)
+		stand.disabled = true
+		crouch.disabled = false
+	elif !ray_cast_3d.is_colliding():
+		crouch.disabled = true
+		stand.disabled = false
+		head.position.y = lerp(head.position.y,0.6,delta*10)
+		
+		if Input.is_action_pressed("sprint"):
+			speed = SPRINT_SPEED
+		else:
+			speed = WALK_SPEED
+		
+		
+	
+	
 	#synch cam with viewport
 	ditherCam.global_transform = camera.global_transform
 	ditherViewport.size = DisplayServer.window_get_size()
@@ -50,10 +79,7 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 
 	# Handle Sprint.
-	if Input.is_action_pressed("sprint"):
-		speed = SPRINT_SPEED
-	else:
-		speed = WALK_SPEED
+
 
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir = Input.get_vector("left", "right", "up", "down")

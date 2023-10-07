@@ -1,11 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://bb7w8vtocq4vx"]
+[gd_scene load_steps=7 format=3 uid="uid://bb7w8vtocq4vx"]
 
 [ext_resource type="Script" path="res://Player/CharacterBody3D.gd" id="1_shwrh"]
 [ext_resource type="Shader" path="res://Player/psx_post.gdshader" id="2_bv3di"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m0luk"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_dt20r"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_r0vdx"]
+radius = 0.4
+height = 1.15
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xr1hi"]
 shader = ExtResource("2_bv3di")
@@ -14,18 +16,22 @@ shader_parameter/dithering = true
 shader_parameter/colors = 12
 shader_parameter/dither_size = 2
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_dt20r"]
+
 [node name="player" type="Node3D"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 script = ExtResource("1_shwrh")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+[node name="Stand" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_m0luk")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-mesh = SubResource("CapsuleMesh_dt20r")
+[node name="Crouch" type="CollisionShape3D" parent="CharacterBody3D"]
+shape = SubResource("CapsuleShape3D_r0vdx")
+disabled = true
 
 [node name="Head" type="Node3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.309864, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Head"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.400028, 0)
@@ -36,6 +42,7 @@ far = 1000.0
 material = SubResource("ShaderMaterial_xr1hi")
 offset_right = 512.0
 offset_bottom = 512.0
+metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="CharacterBody3D/Head/Camera3D/SubViewportContainer"]
 handle_input_locally = false
@@ -48,6 +55,7 @@ far = 1000.0
 
 [node name="SpotLight3D" type="SpotLight3D" parent="CharacterBody3D/Head/Camera3D"]
 transform = Transform3D(0.999998, -0.00174533, 0, 0.00174427, 0.999389, -0.0348995, 6.09111e-05, 0.0348994, 0.999391, 0, -0.2, 0)
+visible = false
 light_energy = 8.0
 light_volumetric_fog_energy = 0.15
 light_specular = 0.534
@@ -58,3 +66,9 @@ spot_range = 30.0
 spot_attenuation = 0.864747
 spot_angle = 11.38
 spot_angle_attenuation = 0.450627
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+mesh = SubResource("CapsuleMesh_dt20r")
+
+[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D"]
+target_position = Vector3(0, 2, 0)
