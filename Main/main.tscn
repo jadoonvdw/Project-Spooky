@@ -78,10 +78,10 @@ light_energy = 0.3
 shadow_enabled = true
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.13, 15.9337, 398.401)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.13, 14.1687, 397.381)
 
 [node name="Forest" parent="." instance=ExtResource("1_gbygh")]
-transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 230.11, -1.35, 213.856)
+transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 264.67, -1.35, 226.654)
 
 [node name="Terrain" parent="." instance=ExtResource("3_hx25i")]
 

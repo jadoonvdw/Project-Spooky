@@ -71,4 +71,5 @@ spot_angle_attenuation = 0.450627
 mesh = SubResource("CapsuleMesh_dt20r")
 
 [node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.266899, 0)
 target_position = Vector3(0, 2, 0)
