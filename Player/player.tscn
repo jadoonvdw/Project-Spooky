@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bb7w8vtocq4vx"]
+[gd_scene load_steps=9 format=3 uid="uid://bb7w8vtocq4vx"]
 
 [ext_resource type="Script" path="res://Player/CharacterBody3D.gd" id="1_shwrh"]
 [ext_resource type="Shader" path="res://Player/psx_post.gdshader" id="2_bv3di"]
+[ext_resource type="Script" path="res://Player/Footstep_manager.gd" id="2_c3upj"]
+[ext_resource type="AudioStream" uid="uid://c0b86gi0gps5y" path="res://audio/footstep_sounds/forest/forest_grass_footstep.mp3" id="3_am20j"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m0luk"]
 
@@ -22,6 +24,14 @@ shader_parameter/dither_size = 2
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 script = ExtResource("1_shwrh")
+
+[node name="Footstep_manager" type="Node3D" parent="CharacterBody3D" node_paths=PackedStringArray("ground_pos")]
+script = ExtResource("2_c3upj")
+footstep_sounds = Array[AudioStreamMP3]([ExtResource("3_am20j")])
+ground_pos = NodePath("../GroundPosition")
+
+[node name="GroundPosition" type="Marker3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 
 [node name="Stand" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_m0luk")
