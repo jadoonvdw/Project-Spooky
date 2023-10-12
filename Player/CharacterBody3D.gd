@@ -28,10 +28,13 @@ var gravity = 9.8
 @onready var flashlight := $Head/Camera3D/SpotLight3D
 @onready var ditherCam := $Head/Camera3D/SubViewportContainer/SubViewport/Camera3D
 @onready var ditherViewport := $Head/Camera3D/SubViewportContainer/SubViewport
-#variables for crouching
+#Variables for crouching
 @onready var stand = $Stand
 @onready var crouch = $Crouch
 @onready var ray_cast_3d = $RayCast3D
+#Variables for footsteps / Shoutout to Dragon20C on youtube for the easy tutorial on this
+var can_play : bool = true
+signal step
 
 #Mouse capture and camera control
 func _unhandled_input(event):
@@ -111,4 +114,15 @@ func _headbob(time) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
 	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
+	
+	var low_pos = BOB_AMP - 0.04 #low_pos will control the timing of the footstep playing
+	#Reset can_play on high point after preventing signal spam
+	if pos.y > -low_pos:
+		can_play = true
+		
+	#Stop can_play on high position to prevent signal spam
+	if pos.y < -low_pos and can_play:
+		can_play = false
+		emit_signal("step")
+	
 	return pos
