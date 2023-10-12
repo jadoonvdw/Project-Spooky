@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bvtvid0b5aj7e"]
 
-[ext_resource type="Shader" path="res://World/water.gdshader" id="3_negft"]
+[ext_resource type="Shader" path="res://Shadrs/water.gdshader" id="1_wsfyn"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_2anke"]
 noise_type = 3
@@ -32,7 +32,7 @@ noise = SubResource("FastNoiseLite_75rqa")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nr8nc"]
 render_priority = 0
-shader = ExtResource("3_negft")
+shader = ExtResource("1_wsfyn")
 shader_parameter/alpha_scissor = 0.0
 shader_parameter/jitter = 0.25
 shader_parameter/affine_mapping = false
