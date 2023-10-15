@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cp1oj3mvkqe3"]
+[gd_scene load_steps=20 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
 [ext_resource type="Script" path="res://Main/main.gd" id="1_amjxq"]
@@ -9,7 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cvulti7c1g3uy" path="res://World_assets/rocks/rock.glb" id="6_7sdx0"]
 [ext_resource type="PackedScene" uid="uid://b77p78x251kad" path="res://World/car.tscn" id="6_nluqf"]
 [ext_resource type="AudioStream" uid="uid://ctq5vkr2f51wa" path="res://audio/ambient_sounds/forest_night.mp3" id="7_62he0"]
-[ext_resource type="PackedScene" path="res://World/dock.tscn" id="7_jqrva"]
+[ext_resource type="PackedScene" uid="uid://b0q8b6bb7pato" path="res://World/dock.tscn" id="7_jqrva"]
+[ext_resource type="PackedScene" uid="uid://ci7dx2ps1eb73" path="res://World/shed.tscn" id="7_n7xib"]
 [ext_resource type="AudioStream" uid="uid://4ftpmassuc63" path="res://audio/ambient_sounds/pond_night_two.wav" id="10_oxix6"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_13b6p"]
@@ -111,6 +112,9 @@ transform = Transform3D(3.5967, 3.47329, 0, -3.47329, 3.5967, 0, 0, 0, 5, 323.98
 transform = Transform3D(3, 0, 0, 0, 1.38525, -2.66103, 0, 2.66103, 1.38525, 318.938, 19.7722, 410.071)
 
 [node name="Landmarks" type="Node3D" parent="."]
+
+[node name="Shed" parent="Landmarks" instance=ExtResource("7_n7xib")]
+transform = Transform3D(-0.819043, 0, -1.25665, 0, 1.5, 0, 1.25665, 0, -0.819043, 278.28, -0.992959, 159.339)
 
 [node name="dock" parent="Landmarks" instance=ExtResource("7_jqrva")]
 transform = Transform3D(0.0163705, 0, -0.999866, 0, 1, 0, 0.999866, 0, 0.0163705, 248.593, -0.648372, 172.666)

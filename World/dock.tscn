@@ -93,7 +93,6 @@ shader_parameter/albedo = ExtResource("3_ji7ug")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22wfu"]
 resource_name = "Wood_04"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 roughness = 0.140028
 
@@ -222,7 +221,6 @@ emission_texture = ExtResource("7_7ekax")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yogau"]
 resource_name = "farol"
 vertex_color_use_as_albedo = true
-albedo_color = Color(1, 1, 1, 1)
 metallic = 0.4
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bvivx"]
