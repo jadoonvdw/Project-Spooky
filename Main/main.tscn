@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cp1oj3mvkqe3"]
+[gd_scene load_steps=19 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
 [ext_resource type="Script" path="res://Main/main.gd" id="1_amjxq"]
@@ -9,7 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cvulti7c1g3uy" path="res://World_assets/rocks/rock.glb" id="6_7sdx0"]
 [ext_resource type="PackedScene" uid="uid://b77p78x251kad" path="res://World/car.tscn" id="6_nluqf"]
 [ext_resource type="AudioStream" uid="uid://ctq5vkr2f51wa" path="res://audio/ambient_sounds/forest_night.mp3" id="7_62he0"]
-[ext_resource type="PackedScene" uid="uid://b0q8b6bb7pato" path="res://World/dock.tscn" id="7_jqrva"]
+[ext_resource type="PackedScene" path="res://World/dock.tscn" id="7_jqrva"]
+[ext_resource type="AudioStream" uid="uid://4ftpmassuc63" path="res://audio/ambient_sounds/pond_night_two.wav" id="10_oxix6"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_13b6p"]
 panorama = ExtResource("1_5e3dg")
@@ -137,6 +138,13 @@ transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, 
 shape = SubResource("BoxShape3D_ydgg8")
 
 [node name="Sounds" type="Node3D" parent="."]
+
+[node name="ambientLakeSounds" type="AudioStreamPlayer3D" parent="Sounds"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 193.825, 0, 180.395)
+stream = ExtResource("10_oxix6")
+volume_db = 2.0
+max_db = 2.0
+autoplay = true
 
 [node name="ambientForestSounds" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource("7_62he0")
