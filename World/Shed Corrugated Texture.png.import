@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbh773jh1tpg8"
-path.s3tc="res://.godot/imported/Wood_10.jpg-53f84d3cafb1a0fe47b64d38a890e1e3.s3tc.ctex"
+uid="uid://ck32erqolh5m"
+path.s3tc="res://.godot/imported/Shed Corrugated Texture.png-4e729dfc4a86ca9db97fbd6c4b64749e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://World_assets/Houses_on_the_water/Texture/Wood_10.jpg"
-dest_files=["res://.godot/imported/Wood_10.jpg-53f84d3cafb1a0fe47b64d38a890e1e3.s3tc.ctex"]
+source_file="res://World/Shed Corrugated Texture.png"
+dest_files=["res://.godot/imported/Shed Corrugated Texture.png-4e729dfc4a86ca9db97fbd6c4b64749e.s3tc.ctex"]
 
 [params]
 
