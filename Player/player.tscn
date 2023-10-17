@@ -77,6 +77,8 @@ spot_attenuation = 0.864747
 spot_angle = 11.38
 spot_angle_attenuation = 0.450627
 
+[node name="flashlightClick" type="AudioStreamPlayer3D" parent="CharacterBody3D/Head/Camera3D/SpotLight3D"]
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_dt20r")
 
