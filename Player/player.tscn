@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bb7w8vtocq4vx"]
+[gd_scene load_steps=10 format=3 uid="uid://bb7w8vtocq4vx"]
 
 [ext_resource type="Script" path="res://Player/CharacterBody3D.gd" id="1_shwrh"]
 [ext_resource type="Shader" path="res://Player/psx_post.gdshader" id="2_bv3di"]
 [ext_resource type="Script" path="res://Player/Footstep_manager.gd" id="2_c3upj"]
 [ext_resource type="AudioStream" uid="uid://c0b86gi0gps5y" path="res://audio/footstep_sounds/forest/forest_grass_footstep.mp3" id="3_am20j"]
+[ext_resource type="AudioStream" uid="uid://qf12hhl2xg4c" path="res://audio/sound_effects/flashlightClick.wav" id="5_i2n7r"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m0luk"]
 
@@ -78,6 +79,8 @@ spot_angle = 11.38
 spot_angle_attenuation = 0.450627
 
 [node name="flashlightClick" type="AudioStreamPlayer3D" parent="CharacterBody3D/Head/Camera3D/SpotLight3D"]
+stream = ExtResource("5_i2n7r")
+max_db = -1.738
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
 mesh = SubResource("CapsuleMesh_dt20r")

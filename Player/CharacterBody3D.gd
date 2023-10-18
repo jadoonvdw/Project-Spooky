@@ -87,6 +87,7 @@ func _physics_process(delta):
 	#Flashlight toggle and click sound
 	if Input.is_action_just_pressed("flashlight"):
 		flashlight.visible = not flashlight.visible
+		flashlightClick.play()
 		
 	#Gravity check
 	if not is_on_floor():
