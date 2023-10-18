@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=2 format=3 uid="uid://c33hvst27grt0"]
+
+[ext_resource type="Script" path="res://addons/inventory-system/core/inventory_item.gd" id="1_vp7iq"]
+
+[resource]
+script = ExtResource("1_vp7iq")
+id = 0
+max_stack = 0
+name = ""
+weight = 0.0
+properties = {}
+categories = Array[Resource("res://addons/inventory-system/core/item_category.gd")]([])

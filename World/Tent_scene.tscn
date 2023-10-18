@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://x43q4ul6quh0"]
+[gd_scene load_steps=33 format=3 uid="uid://x43q4ul6quh0"]
 
 [ext_resource type="PackedScene" uid="uid://dqj5fnj0crym6" path="res://World_assets/Survival/Models/Survival.fbx" id="1_gynag"]
 [ext_resource type="Shader" path="res://Shadrs/psx.gdshader" id="2_ga4mj"]
@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://dxfw80c0q5466" path="res://World_assets/Survival/Textures/Shelter_tent.png" id="14_104xg"]
 [ext_resource type="Texture2D" uid="uid://dmwvkbq7oy7co" path="res://World_assets/PSX Villager Woman/VillageWomanTexture.png" id="16_leo5x"]
 [ext_resource type="Texture2D" uid="uid://16xv2hxiyumy" path="res://World_assets/BlueRoseSonata Blood FX Pack/bloodspray.png" id="17_lbg6k"]
-[ext_resource type="AudioStream" uid="uid://c83a2omwu7pjw" path="res://audio/ambient_sounds/campfire_crackle.mp3" id="18_y2vj2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_py0ld"]
 render_priority = 0
@@ -495,10 +494,3 @@ skin = SubResource("Skin_crto3")
 transform = Transform3D(-0.999615, 0, -0.0277472, -0.000720529, 0.999663, 0.0259576, 0.0277379, 0.0259676, -0.999278, -2.18768, -0.0130814, 0.339553)
 texture_albedo = ExtResource("17_lbg6k")
 emission_energy = 0.0
-
-[node name="campfire_crackle" type="AudioStreamPlayer3D" parent="." index="2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.44586, 0.635932, 1.61648)
-stream = ExtResource("18_y2vj2")
-volume_db = -5.512
-max_db = 3.043
-autoplay = true

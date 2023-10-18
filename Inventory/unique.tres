@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=2 format=3 uid="uid://sijwdeoh0bji"]
+
+[ext_resource type="Script" path="res://addons/inventory-system/core/item_category.gd" id="1_tfnac"]
+
+[resource]
+script = ExtResource("1_tfnac")
+name = ""
+color = Color(1, 1, 1, 1)
