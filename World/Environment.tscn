@@ -99,7 +99,7 @@ shadow_mesh = SubResource("ArrayMesh_4h3vs")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ovajb"]
 points = PackedVector3Array(-0.219937, -0.00343651, -0.0704365, 0.219937, 0.402071, 0.00514245, 0.219937, 0.402071, -0.00170635, -0.219937, 0.402071, 0.00514245, 0.219937, -0.00343651, 0.0670238, 0.219937, -0.00343651, -0.0704365, -0.219937, -0.00343651, 0.0670238, 0.219937, 0.030938, 0.0670238, -0.219937, 0.0172041, -0.0704365, -0.219937, 0.402071, -0.00170635, -0.219937, 0.030938, 0.0670238, 0.219937, 0.0172041, -0.0704365)
 
-[sub_resource type="Resource" id="Resource_cvs31"]
+[sub_resource type="Resource" id="Resource_v6v3p"]
 script = ExtResource("12_fxvr2")
 spacing = Vector3(2, 1, 3)
 enabled = true
@@ -108,7 +108,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_sf0ho"]
+[sub_resource type="Resource" id="Resource_y0whm"]
 script = ExtResource("13_beow4")
 position = Vector3(3, 0, 3)
 rotation = Vector3(20, 360, 20)
@@ -119,7 +119,7 @@ custom_seed = 420
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_u6dhu"]
+[sub_resource type="Resource" id="Resource_t7tyd"]
 script = ExtResource("14_dkr1d")
 ray_direction = Vector3(0, -1, 0)
 ray_length = 10.0
@@ -135,9 +135,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_aqyfd"]
+[sub_resource type="Resource" id="Resource_7xwk5"]
 script = ExtResource("11_8goi5")
-stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_cvs31"), SubResource("Resource_sf0ho"), SubResource("Resource_u6dhu")])
+stack = Array[Resource("res://addons/proton_scatter/src/modifiers/base_modifier.gd")]([SubResource("Resource_v6v3p"), SubResource("Resource_y0whm"), SubResource("Resource_t7tyd")])
 
 [sub_resource type="Resource" id="Resource_hy63n"]
 script = ExtResource("17_tibmc")
@@ -265,7 +265,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 240.079, 0, 208.886)
 
 [node name="ProtonScatter" type="Node3D" parent="grass"]
 script = ExtResource("10_ef2rc")
-modifier_stack = SubResource("Resource_aqyfd")
+modifier_stack = SubResource("Resource_7xwk5")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 
@@ -284,4 +284,4 @@ negative = true
 shape = SubResource("Resource_orj40")
 
 [node name="Water" parent="." instance=ExtResource("19_qw8e8")]
-transform = Transform3D(110, 0, 0, 0, 1, 0, 0, 0, 120, 195.901, -1.21491, 187.757)
+transform = Transform3D(110, 0, 0, 0, 1, 0, 0, 0, 120, 195.901, -1.21491, 184.654)

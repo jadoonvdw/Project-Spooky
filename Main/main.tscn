@@ -81,7 +81,7 @@ light_energy = 0.3
 shadow_enabled = true
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.13, 14.1687, 397.381)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.62, 14.1188, 398.118)
 
 [node name="Forest" parent="." instance=ExtResource("1_gbygh")]
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 264.67, -1.35, 226.654)
@@ -128,7 +128,7 @@ transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.0341706, -1.49951, 0.01
 [node name="Collision Walls" type="Node3D" parent="."]
 
 [node name="Spawn Wall" type="StaticBody3D" parent="Collision Walls"]
-transform = Transform3D(0.989888, 0, 0.141852, 0, 1, 0, -0.141852, 0, 0.989888, 318.79, 15, 405.48)
+transform = Transform3D(0.989888, 0, 0.141852, 0, 1, 0, -0.141852, 0, 0.989888, 319.009, 15, 405.48)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collision Walls/Spawn Wall"]
 transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -1.01694, -0.913044, -0.685089)
@@ -140,6 +140,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 294.034, 3.0241, 355.26)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collision Walls/Crater Rock Collision"]
 transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -3.57501, -4.01999, -2.9989)
 shape = SubResource("BoxShape3D_ydgg8")
+
+[node name="Lake Collision" type="StaticBody3D" parent="Collision Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200.453, 0, 176.117)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Collision Walls/Lake Collision"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 4.9711, 0)
+depth = 20.0
+polygon = PackedVector2Array(48.2684, 0.416, 47.9156, -3.81758, 42.0591, -3.88814, 41.9886, -6.21661, 47.9861, -6.21661, 47.9861, -12.0731, 45.233, -23.9251, 38.8477, -33.8531, 28.3569, -42.7667, 12.8987, -47.5641, -2.38197, -45.4319, -20.5055, -39.9238, -31.1664, -35.1264, -45.914, -18.069, -53.1989, 0.0545654, -54.265, 19.2442, -49.4676, 36.3016, -42.538, 43.0535, -28.6789, 45.008, -12.3322, 44.475, -5.58025, 47.8509, 6.32443, 51.7599, 27.1132, 51.0492, 34.7535, 47.1402, 39.5509, 45.1857, 47.0135, 30.0828, 52.1663, 20.3103, 50.3895, 4.14124)
 
 [node name="Sounds" type="Node3D" parent="."]
 
