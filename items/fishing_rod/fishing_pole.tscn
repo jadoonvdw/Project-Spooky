@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvb3kt15nybpu"]
+
+[ext_resource type="Script" path="res://addons/inventory-system/core/dropped_item_3d.gd" id="1_fwo7k"]
+[ext_resource type="Resource" uid="uid://b6jr8if8sakxo" path="res://Inventory/fishing_pole.tres" id="2_b77wo"]
+[ext_resource type="ArrayMesh" uid="uid://b5o3mnh3bki4r" path="res://items/fishing_rod/fishingrod.obj" id="3_rp1ed"]
+
+[node name="fishing_pole" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09876, 0)
+script = ExtResource("1_fwo7k")
+item = ExtResource("2_b77wo")
+
+[node name="Fishingrod" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0.322551, -1.09876, -0.837873)
+mesh = ExtResource("3_rp1ed")
