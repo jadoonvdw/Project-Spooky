@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cp1oj3mvkqe3"]
+[gd_scene load_steps=26 format=3 uid="uid://cp1oj3mvkqe3"]
 
 [ext_resource type="Texture2D" uid="uid://w8dck80j1xek" path="res://World/PSX_NIGHTSKY.hdr" id="1_5e3dg"]
 [ext_resource type="Script" path="res://Main/main.gd" id="1_amjxq"]
@@ -35,7 +35,6 @@ fog_density = 0.5342
 fog_sky_affect = 0.75
 fog_height = 1.0
 fog_height_density = -5.0
-volumetric_fog_enabled = true
 volumetric_fog_density = 0.036
 volumetric_fog_sky_affect = 0.95
 adjustment_brightness = 1.5
@@ -45,11 +44,29 @@ adjustment_saturation = 0.6
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_sfylq"]
 dof_blur_far_distance = 30.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ydgg8"]
+size = Vector3(10.2846, 3.74599, 19.3762)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_1h32x"]
 size = Vector3(42.6125, 39.8119, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ydgg8"]
-size = Vector3(10.2846, 3.74599, 19.3762)
+[sub_resource type="BoxShape3D" id="BoxShape3D_lgdwj"]
+size = Vector3(1.63124, 202.668, 58.6928)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qedr3"]
+size = Vector3(150.265, 1, 80.4685)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ladtp"]
+size = Vector3(106.363, 2.46244, 81.8882)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a35wm"]
+size = Vector3(2.06094, 150.449, 71.8031)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_to3h7"]
+size = Vector3(3.21529, 205.998, 70.036)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eixq4"]
+size = Vector3(1.50024, 106.147, 57.3599)
 
 [sub_resource type="GDScript" id="GDScript_xd8w0"]
 script/source = "extends AudioStreamPlayer
@@ -81,7 +98,7 @@ light_energy = 0.3
 shadow_enabled = true
 
 [node name="player" parent="." instance=ExtResource("2_om6f5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.13, 14.1687, 397.381)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 315.62, 14.1188, 398.118)
 
 [node name="Forest" parent="." instance=ExtResource("1_gbygh")]
 transform = Transform3D(-0.063749, 0, 0.997966, 0, 1, 0, -0.997966, 0, -0.063749, 264.67, -1.35, 226.654)
@@ -127,19 +144,48 @@ transform = Transform3D(1.34286, 0.0226388, -0.668001, 0.0341706, -1.49951, 0.01
 
 [node name="Collision Walls" type="Node3D" parent="."]
 
-[node name="Spawn Wall" type="StaticBody3D" parent="Collision Walls"]
-transform = Transform3D(0.989888, 0, 0.141852, 0, 1, 0, -0.141852, 0, 0.989888, 318.79, 15, 405.48)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision Walls/Spawn Wall"]
-transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -1.01694, -0.913044, -0.685089)
-shape = SubResource("BoxShape3D_1h32x")
-
 [node name="Crater Rock Collision" type="StaticBody3D" parent="Collision Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 294.034, 3.0241, 355.26)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collision Walls/Crater Rock Collision"]
 transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -3.57501, -4.01999, -2.9989)
 shape = SubResource("BoxShape3D_ydgg8")
+
+[node name="Forest Boundaries" type="StaticBody3D" parent="Collision Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 246.249, 0, 223.449)
+
+[node name="Spawn Wall" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(0.837194, 0, 0.546906, 0, 1, 0, -0.546906, 0, 0.837194, 71.6557, 14.087, 181.498)
+shape = SubResource("BoxShape3D_1h32x")
+
+[node name="ForestWall1" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(0.537299, 0.843391, -3.68658e-08, 0, -4.37114e-08, -1, -0.843391, 0.537299, -2.34861e-08, -16.575, 11.9101, 135.474)
+shape = SubResource("BoxShape3D_lgdwj")
+
+[node name="ForestWall2" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(-0.5, 0.866025, -3.78552e-08, 0, -4.37114e-08, -1, -0.866025, -0.5, 2.18557e-08, -116.346, 29.2503, 32.0398)
+shape = SubResource("BoxShape3D_qedr3")
+
+[node name="ForestWall3" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(0.842452, 0.538771, -2.35504e-08, 0, -4.37114e-08, -1, -0.538771, 0.842452, -3.68248e-08, -110.102, 29.2503, -59.9723)
+shape = SubResource("BoxShape3D_ladtp")
+
+[node name="ForestWall4" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(0.173648, -0.984807, 4.30473e-08, 0, -4.37114e-08, -1, 0.984807, 0.173648, -7.5904e-09, 40.2404, 29.2503, -106.633)
+shape = SubResource("BoxShape3D_a35wm")
+
+[node name="ForestWall5" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(0.996194, -0.0871557, 3.8097e-09, 0, -4.37114e-08, -1, 0.0871557, 0.996194, -4.35451e-08, 104.355, 29.2503, -18.4761)
+shape = SubResource("BoxShape3D_to3h7")
+
+[node name="ForestWall6" type="CollisionShape3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(0.990268, -0.139173, 6.08345e-09, 0, -4.37114e-08, -1, 0.139173, 0.990268, -4.3286e-08, 89.1433, 19.4931, 124.809)
+shape = SubResource("BoxShape3D_eixq4")
+
+[node name="Lake Collision" type="CollisionPolygon3D" parent="Collision Walls/Forest Boundaries"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -45.7964, 10, -47.3316)
+depth = 20.0
+polygon = PackedVector2Array(47.5719, -6.24536, 42.2821, -5.98087, 42.2821, -4.21761, 48.189, -3.77679, 48.189, 0.0142212, 50.1286, 5.92114, 51.1822, 31.9671, 28.5178, 56.1704, -52.0668, 41.9002, -55.644, -25.1421, 16.8095, -48.4774, 47.1617, -35.4227, 48.3503, -5.91376)
 
 [node name="Sounds" type="Node3D" parent="."]
 
