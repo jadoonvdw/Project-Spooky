@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://we62hq420h1l"]
+
+[ext_resource type="Shader" path="res://Shadrs/psx.gdshader" id="1_v7ext"]
+[ext_resource type="Texture2D" uid="uid://cq2xi4am0kx8g" path="res://items/fishing_rod/DefaultMaterial_Base_color.png" id="2_mbp67"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_v7ext")
+shader_parameter/affine_mapping = false
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(320, 240)
+shader_parameter/albedo = ExtResource("2_mbp67")
