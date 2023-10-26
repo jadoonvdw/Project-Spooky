@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b4kaxgmuxano2"]
+[gd_scene load_steps=16 format=3 uid="uid://b4kaxgmuxano2"]
 
 [ext_resource type="Texture2D" uid="uid://b7y6oc0fqrqvg" path="res://World_assets/PSX_Furniture, Appliances, And Others/Small_Tablefbx.fbx_Scene/Small_Tablefbx_Another_Wood.png" id="1_ixrwp"]
 [ext_resource type="PackedScene" uid="uid://bb7w8vtocq4vx" path="res://Player/player.tscn" id="2_cw3f3"]
@@ -8,6 +8,19 @@
 [ext_resource type="PackedScene" uid="uid://bo3vl1gmv7lq" path="res://items/rabbit/rabbit.tscn" id="7_xdx60"]
 [ext_resource type="PackedScene" uid="uid://dd75uxgiem2oc" path="res://items/keycard/keycard.tscn" id="8_fyetc"]
 [ext_resource type="PackedScene" uid="uid://dxtymidoys4nr" path="res://items/ichor_flesh/ichor_flesh.tscn" id="9_cnwpk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q7fl8"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_pwdlx"]
+sky_material = SubResource("ProceduralSkyMaterial_q7fl8")
+
+[sub_resource type="Environment" id="Environment_vd33g"]
+background_mode = 2
+sky = SubResource("Sky_pwdlx")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aut3q"]
 resource_name = "Another_Wood"
@@ -51,6 +64,13 @@ points = PackedVector3Array(0.00169403, -0.0885292, -0.01, 0.10834, -0.00187101,
 
 [node name="item_test" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vd33g")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 use_collision = true
 size = Vector3(30, 1, 30)
@@ -69,25 +89,71 @@ skeleton = NodePath("")
 transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.020434)
 shape = SubResource("ConvexPolygonShape3D_dnlfk")
 
+[node name="table2" type="StaticBody3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.00108957, 0.246859, 1.12656)
+
+[node name="Table" type="MeshInstance3D" parent="table2"]
+transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.0240926)
+mesh = SubResource("ArrayMesh_27exl")
+skeleton = NodePath("")
+
+[node name="RootNode" type="Node3D" parent="table2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table2"]
+transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.020434)
+shape = SubResource("ConvexPolygonShape3D_dnlfk")
+
+[node name="table3" type="StaticBody3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.00108957, 0.246859, 2.61845)
+
+[node name="Table" type="MeshInstance3D" parent="table3"]
+transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.0240926)
+mesh = SubResource("ArrayMesh_27exl")
+skeleton = NodePath("")
+
+[node name="RootNode" type="Node3D" parent="table3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table3"]
+transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.020434)
+shape = SubResource("ConvexPolygonShape3D_dnlfk")
+
+[node name="table4" type="StaticBody3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.00108957, 0.246859, 4.11073)
+
+[node name="Table" type="MeshInstance3D" parent="table4"]
+transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.0240926)
+mesh = SubResource("ArrayMesh_27exl")
+skeleton = NodePath("")
+
+[node name="RootNode" type="Node3D" parent="table4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table4"]
+transform = Transform3D(8.759, 0, 0, 0, -3.82868e-07, 8.759, 0, -8.759, -3.82868e-07, -0.472535, 0.0899846, 0.020434)
+shape = SubResource("ConvexPolygonShape3D_dnlfk")
+
 [node name="player" parent="." instance=ExtResource("2_cw3f3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.94022, 1.64864, 0.530169)
 
 [node name="Item set #1" type="Node3D" parent="."]
 
 [node name="fishing_pole" parent="Item set #1" instance=ExtResource("3_1pwy1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.78379, 3.60583)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.188663, 2.23053, 2.26457)
 
 [node name="skull" parent="Item set #1" instance=ExtResource("5_ly4an")]
+transform = Transform3D(0.000172793, 0, -0.3, 0, 0.3, 0, 0.3, 0, 0.000172793, -0.0322056, 1.52813, 3.43855)
 
 [node name="Item set #2" type="Node3D" parent="."]
 
 [node name="rusty_knife" parent="Item set #2" instance=ExtResource("6_jxhbu")]
+transform = Transform3D(0.983363, -0.18045, -0.0208628, 0.0123962, -0.0479205, 0.998774, -0.181229, -0.982416, -0.0448863, -0.63174, 1.67526, 4.77288)
 
 [node name="rabbit" parent="Item set #2" instance=ExtResource("7_xdx60")]
+transform = Transform3D(0.25, 0, 0, 0, 0.248011, -0.0314718, 0, 0.0314718, 0.248011, -0.0215101, 1.86758, 5.21664)
 
 [node name="Item set #3" type="Node3D" parent="."]
 
 [node name="keycard" parent="Item set #3" instance=ExtResource("8_fyetc")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -0.694146, 3.20456, 4.08531)
 
 [node name="ichor_flesh" parent="Item set #3" instance=ExtResource("9_cnwpk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 1, -3)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.29531, 1.72235, 1.20222)

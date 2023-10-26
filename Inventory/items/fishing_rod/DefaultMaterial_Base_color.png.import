@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dixat2qdtxm3e"
-path.s3tc="res://.godot/imported/Torch.png-5b8c62b1988e7e911431f9a0852ab276.s3tc.ctex"
+uid="uid://cq2xi4am0kx8g"
+path.s3tc="res://.godot/imported/DefaultMaterial_Base_color.png-db4088bf737de6c27d12669149d590f1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://World_assets/Survival/Textures/Torch.png"
-dest_files=["res://.godot/imported/Torch.png-5b8c62b1988e7e911431f9a0852ab276.s3tc.ctex"]
+source_file="res://Inventory/items/fishing_rod/DefaultMaterial_Base_color.png"
+dest_files=["res://.godot/imported/DefaultMaterial_Base_color.png-db4088bf737de6c27d12669149d590f1.s3tc.ctex"]
 
 [params]
 
